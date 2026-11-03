@@ -4,184 +4,133 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-abhay--portfolio.vercel.app-2B6CB0?style=for-the-badge&logo=vercel&logoColor=white)](https://abhay-portfolio-pi-tan.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhay_Dwivedi-1E3A8A?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/)
-[![GitHub](https://img.shields.io/badge/GitHub-AbhayDw-1A1D20?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AbhayDw)
-[![Email](https://img.shields.io/badge/Email-dwivediabhay727%40gmail.com-D97706?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dwivediabhay727@gmail.com)
+<p align="center">
+  <a href="https://abhay-portfolio-pi-tan.vercel.app/"><strong>Portfolio Website</strong> ↗</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><strong>LinkedIn</strong> ↗</a> &nbsp;·&nbsp;
+  <a href="https://github.com/AbhayDw"><strong>GitHub</strong> ↗</a> &nbsp;·&nbsp;
+  <a href="mailto:dwivediabhay727@gmail.com"><strong>Email</strong> ↗</a> &nbsp;·&nbsp;
+  <span>📍 Bhopal, Madhya Pradesh, India</span>
+</p>
 
 </div>
 
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
+---
 
-### Executive Overview
+### About
 
-I am a **Technology & Digital Solutions Professional** working across **state-level government digital platforms, enterprise software implementation, multi-tier stakeholder coordination, and applied AI/data systems**.
+I am a **Technology & Digital Solutions Professional** working across state-level government digital initiatives, software delivery, multi-tier stakeholder coordination, and applied AI/data systems.
 
-My work bridges technical engineering teams with administrative departments, academic leadership, and end users. I focus on the operational reality of software delivery: translating institutional policies into functional technical requirements, managing User Acceptance Testing (UAT), delivering hands-on training to faculty and administrative personnel, and engineering data-driven predictive models that support informed decision-making.
+Over the past several years, my work has centered on bridging the gap between technical engineering groups, administrative leadership, and operational end users. Rather than viewing technology solely through code, I focus on the entire implementation lifecycle: translating policy mandates into structured technical requirements, managing User Acceptance Testing (UAT), training faculty and staff across regional institutions, and engineering practical machine learning models that support operational decision-making.
 
-```text
-Professional Title:    Technology & Digital Solutions Professional
-Core Focus:            Government Platforms • Software Delivery • Stakeholder Training • Applied AI
-Headquarters:          Bhopal, Madhya Pradesh, India
-Operating Principle:   Robust architectures succeed only when operational adoption is seamless.
-```
+---
 
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
+### Focus Areas
 
-### Professional Focus Areas
+* **Government Digital Transformation**  
+  Deploying regional public-sector software systems across administrative bodies. Translating government directives into functional system workflows, ensuring audit readiness, and delivering dependable public-facing services.
 
-| Focus Area | Operational Scope & Technical Value |
-| :--- | :--- |
-| **01 &nbsp; Government Digital Transformation** | Deploying public-sector software architectures across regional institutions. Translating governance and policy directives into verifiable functional specifications, maintaining audit integrity, and ensuring reliable delivery for administrative stakeholders. |
-| **02 &nbsp; Software Implementation & Client Coordination** | Bridging software engineering teams with institutional administrators. Managing end-to-end rollout schedules, leading User Acceptance Testing (UAT), delivering technical demonstrations, training faculty and administrative staff, and resolving adoption bottlenecks. |
-| **03 &nbsp; AI, Data Science & Technology Solutions** | Engineering applied machine learning pipelines, predictive regression and classification engines, exploratory data analyses, and modern agentic/RAG workflows that convert complex operational data into actionable intelligence. |
+* **Software Implementation & Client Coordination**  
+  Leading institutional rollouts, user acceptance testing (UAT), and stakeholder enablement. Designing technical demonstrations, training faculty and staff, and resolving adoption bottlenecks during software transition.
 
-<br/>
+* **AI, Data Science & Technology Solutions**  
+  Developing applied predictive models, data wrangling pipelines, and generative AI/RAG workflows that convert complex operational datasets into clear, actionable intelligence.
 
-<div align="center">
-  <img src="assets/data-flow.gif" alt="Transformation Lifecycle & Data Flow" width="100%" />
-</div>
-
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
+---
 
 ### Government & Institutional Project Contributions
 
-*The following represent targeted project contributions and coordination mandates delivered for state government initiatives and institutional departments (distinct from direct civil-service employment):*
+*The following represent targeted project contributions and coordination mandates delivered for state initiatives and public departments, distinct from direct civil-service employment:*
 
-#### **1. Student & College Management Software (SCMS) — Madhya Pradesh Higher Education Department**
-* **Project Role:** Client Coordinator & Technical Trainer
-* **Key Contributions & Responsibilities:**
-  * **Institutional Implementation Support:** Coordinated software deployment schedules and data readiness across **67+ PMCOE (Pradhan Mantri College of Excellence) and autonomous colleges**.
-  * **Department & Stakeholder Coordination:** Acted as primary operational liaison between state higher education officials, college principals, registrars, and technical development teams.
-  * **Faculty & Staff Technical Training:** Designed and delivered structured training sessions, practical walkthroughs, and technical demonstrations for professors and administrative staff.
-  * **UAT & Data Validation:** Facilitated User Acceptance Testing cycles, validated legacy academic records, and reconciled institutional data structures.
-  * **Troubleshooting & Software Adoption:** Monitored real-time user feedback, guided incident resolution workflows, and minimized operational resistance during campus onboarding.
+#### **1. Student & College Management Software (SCMS)** — *Madhya Pradesh Higher Education Department*
+* **Role:** Client Coordinator & Technical Trainer
+* **Multi-Campus Deployment:** Coordinated software implementation schedules, readiness assessments, and data validation across **67+ PMCOE (Pradhan Mantri College of Excellence) and autonomous colleges**.
+* **Stakeholder Coordination:** Served as the operational communication bridge between state department officials, college leadership, registrars, and technical developers.
+* **Faculty & Staff Training:** Delivered structured training sessions, workshops, and technical walkthroughs for professors and administrative staff.
+* **UAT & Data Validation:** Facilitated User Acceptance Testing cycles, validated legacy academic records, and verified system data consistency.
+* **Troubleshooting & Adoption:** Addressed functional issues, gathered end-user feedback, and streamlined onboarding to ensure long-term software adoption.
 
-#### **2. e-Setu — Madhya Pradesh Government Agriculture Initiative**
-* **Project Scope:** Digital enablement initiative connecting rural agricultural stakeholders with state welfare, administrative validation, and logistics channels.
-* **Contribution:** Supported process workflow reviews, system documentation, and functional coordination to ensure smooth accessibility and administrative alignment for ground-level touchpoints.
+#### **2. e-Setu** — *Madhya Pradesh Government Agriculture Initiative*
+* **Initiative:** State digital platform connecting agricultural communities with governmental services, administrative touchpoints, and logistics.
+* **Contribution:** Supported process workflow reviews, system documentation, and functional coordination to ensure accessible, transparent service delivery for rural stakeholders.
 
 #### **3. Directorate of Archaeology, Madhya Pradesh**
-* **Contribution:** Created structured technical training videos, visual media walkthroughs, and supporting communication materials for departmental digital documentation and staff onboarding.
+* **Initiative:** Heritage documentation and digital onboarding support.
+* **Contribution:** Produced technical training videos, visual media walkthroughs, and supporting communication content for departmental staff onboarding and archival workflows.
 
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
+---
 
-### Professional Experience Timeline
+### Professional Experience
 
-```text
-2024 — PRESENT    MADHYA PRADESH HIGHER EDUCATION DEPARTMENT
-                  Client Coordinator & Technical Trainer — SCMS Project
-                  • Managed implementation coordination and data validation across 67+ PMCOE & autonomous colleges.
-                  • Led technical training sessions, software demonstrations, and structured UAT cycles for faculty/staff.
-                  • Streamlined inter-departmental communication between academic leadership and engineering teams.
+* **Client Coordinator & Technical Trainer — SCMS Project**  
+  **Madhya Pradesh Higher Education Department** &nbsp;·&nbsp; *2024 – Present*  
+  Coordinated software deployment and data validation across 67+ PMCOE and autonomous colleges. Led faculty training workshops, system demonstrations, and structured UAT cycles while facilitating inter-departmental communication between academic leadership and engineering teams.
 
-2024              CONORG INDIA
-                  Software Intern
-                  • Participated in core software module implementation, code reviews, and quality assurance.
-                  • Formulated technical documentation, test cases, and functional workflow diagrams.
+* **Software Intern**  
+  **CONORG India** &nbsp;·&nbsp; *2024*  
+  Contributed to software implementation, core feature development, quality assurance testing, and functional documentation.
 
-2023 — 2024       CODRAT TECH PVT. LTD.
-                  Python Development Intern
-                  • Engineered automated backend scripts and data processing utilities using Python.
-                  • Executed exploratory data analysis (EDA), code optimization, and unit testing routines.
+* **Python Development Intern**  
+  **Codrat Tech Pvt. Ltd.** &nbsp;·&nbsp; *2023 – 2024*  
+  Developed automated backend scripts and data processing utilities using Python. Conducted exploratory data analysis (EDA), code optimization, and unit testing routines.
 
-2023 — 2024       APNA SAC
-                  Discipline Club Coordinator
-                  • Supervised student operations, event logistics, and cross-functional leadership teams.
-                  • Coordinated 25+ institutional college events; earned Best Event Management recognition.
-```
+* **Discipline Club Coordinator**  
+  **Apna SAC** &nbsp;·&nbsp; *2023 – 2024*  
+  Managed student operations and event coordination across 25+ institutional college events. Recognized with the Best Event Management Award.
 
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
+---
 
-### Featured Projects
+### Selected Projects
 
 <!-- START_SECTION:PROJECTS -->
-| Featured Implementation | Featured Implementation |
-| :--- | :--- |
-| <strong><a href="https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction">AI Powered Car Price Prediction</a></strong><br/><sub>End-to-end regression modeling and feature engineering pipeline predicting pre-owned vehicle valuations with cross-validated evaluation.</sub><br/><br/><strong>Stack:</strong> <code>Python • Scikit-learn</code><br/><a href="https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction">Inspect Repository ↗</a> &nbsp;•&nbsp; <a href="https://abhay-portfolio-pi-tan.vercel.app/">Live Demo ↗</a> | <strong><a href="https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction">Emergency Patient Priority Prediction</a></strong><br/><sub>Clinical triage prioritization system utilizing multi-class predictive modeling to categorize patient acuity and assist hospital admissions.</sub><br/><br/><strong>Stack:</strong> <code>Python • ML</code><br/><a href="https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction">Inspect Repository ↗</a> &nbsp;•&nbsp; <a href="https://abhay-portfolio-pi-tan.vercel.app/">Live Demo ↗</a> |
-| <strong><a href="https://github.com/AbhayDw/Breast-Cancer-Detection">Breast Cancer Detection</a></strong><br/><sub>Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation.</sub><br/><br/><strong>Stack:</strong> <code>Python • Scikit-learn</code><br/><a href="https://github.com/AbhayDw/Breast-Cancer-Detection">Inspect Repository ↗</a> &nbsp;•&nbsp; <a href="https://abhay-portfolio-pi-tan.vercel.app/">Live Demo ↗</a> | <strong><a href="https://github.com/AbhayDw/California-Housing-Price-Prediction">California Housing Price Prediction</a></strong><br/><sub>Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning.</sub><br/><br/><strong>Stack:</strong> <code>Python • Scikit-learn</code><br/><a href="https://github.com/AbhayDw/California-Housing-Price-Prediction">Inspect Repository ↗</a> &nbsp;•&nbsp; <a href="https://abhay-portfolio-pi-tan.vercel.app/">Live Demo ↗</a> |
-| <strong><a href="https://github.com/AbhayDw/Titanic-Survival-Prediction">Titanic Survival Prediction</a></strong><br/><sub>Exploratory data analysis (EDA), probabilistic feature engineering, and ensemble classification on demographic survival factors.</sub><br/><br/><strong>Stack:</strong> <code>Python • Pandas • ML</code><br/><a href="https://github.com/AbhayDw/Titanic-Survival-Prediction">Inspect Repository ↗</a> &nbsp;•&nbsp; <a href="https://abhay-portfolio-pi-tan.vercel.app/">Live Demo ↗</a> | <strong><a href="https://github.com/AbhayDw/Movie-Recommendation-System">Movie Recommendation System</a></strong><br/><sub>Hybrid content-based recommendation engine utilizing cosine similarity matrices and high-dimensional vector representations.</sub><br/><br/><strong>Stack:</strong> <code>Python • NLP • Vectors</code><br/><a href="https://github.com/AbhayDw/Movie-Recommendation-System">Inspect Repository ↗</a> &nbsp;•&nbsp; <a href="https://abhay-portfolio-pi-tan.vercel.app/">Live Demo ↗</a> |
+| Project | Focus & Technical Overview | Stack & Links |
+| :--- | :--- | :--- |
+| **[AI Powered Car Price Prediction](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction)** | End-to-end regression modeling and feature engineering pipeline to predict pre-owned vehicle valuations with cross-validated evaluation. | `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[Emergency Patient Priority Prediction](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction)** | Clinical triage prioritization system utilizing multi-class predictive classification to assess patient acuity and support hospital admissions. | `Python, Machine Learning`<br/>[Repository ↗](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[Breast Cancer Detection](https://github.com/AbhayDw/Breast-Cancer-Detection)** | Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation. | `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/Breast-Cancer-Detection) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[California Housing Price Prediction](https://github.com/AbhayDw/California-Housing-Price-Prediction)** | Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning. | `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/California-Housing-Price-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
 <!-- END_SECTION:PROJECTS -->
 
 <p align="right">
-  <strong><a href="https://github.com/AbhayDw?tab=repositories">Explore All Public Repositories ↗</a></strong>
+  <a href="https://github.com/AbhayDw?tab=repositories"><strong>View All Repositories on GitHub ↗</strong></a>
 </p>
 
-> *The project matrix above updates automatically via a GitHub Actions synchronization workflow that tracks repositories tagged with the topic `portfolio`.*
-
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
+---
 
 ### Technical Expertise
 
-| Category | Specialized Toolchain & Applied Competencies |
-| :--- | :--- |
-| **Programming & Querying** | `Python`, `SQL (Structured Query Language)`, `Shell Scripting` |
-| **Data Science & Wrangling** | `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, Exploratory Data Analysis (EDA) |
-| **Machine Learning** | `Scikit-learn`, Linear/Logistic Regression, Multi-class Classification, Feature Engineering, Cross-Validation, Model Evaluation |
-| **Artificial Intelligence** | `Generative AI Foundations`, `Natural Language Processing (NLP)`, `LangChain`, `Retrieval-Augmented Generation (RAG)` |
-| **Databases & Architecture** | `MySQL`, `PostgreSQL`, Relational Schema Design, Query Optimization |
-| **Analytics & BI** | `Power BI`, `Microsoft Excel (Advanced Data Modeling)`, Metric Synthesis, KPI Dashboards |
-| **Tools & Environments** | `Git`, `GitHub`, `GitHub Actions (CI/CD)`, `VS Code`, `Jupyter Notebook`, UAT Protocols |
+* **Programming & Querying:** `Python`, `SQL`
+* **Data Science & Analysis:** `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, Exploratory Data Analysis (EDA)
+* **Machine Learning:** `Scikit-learn`, Linear & Logistic Regression, Multi-class Classification, Feature Engineering, Model Evaluation
+* **Artificial Intelligence:** `Generative AI`, `Natural Language Processing (NLP)`, `LangChain`, `Retrieval-Augmented Generation (RAG)`
+* **Databases:** `PostgreSQL`, `MySQL`
+* **Analytics & Reporting:** `Power BI`, `Microsoft Excel (Advanced Data Modeling)`
+* **Tools & Workflow:** `Git`, `GitHub`, `GitHub Actions (CI/CD)`, `VS Code`, `Jupyter Notebook`
 
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
+---
 
-### Verified Certifications & Honors
+### Certifications & Achievements
 
-#### Professional Certifications
-* **Oracle Certified Associate** — Oracle Agentic AI Certified Foundations Associate
-* **NPTEL (IIT)** — Python for Data Science *(Score: 75%)*
-* **Cisco Networking Academy** — Cisco Python Essentials 1
-* **HackerRank** — SQL Intermediate Certified Assessment
-* **Industry Specialization** — Data Analyst Master Class
+#### Certifications
+* **Oracle Agentic AI Certified Foundations Associate** — Oracle
+* **Python for Data Science (Score: 75%)** — NPTEL (IIT)
+* **Python Essentials 1** — Cisco Networking Academy
+* **SQL Intermediate** — HackerRank
+* **Data Analyst Master Class** — Professional Specialization
 
-#### Leadership & Honors
-* 🏆 **First Prize — Gravitation 2024 (Shark Tank Style)**: Commended for tech-venture business modeling, system feasibility, and executive presentation.
-* 🎖️ **Best Event Management Award**: Recognized for outstanding leadership in orchestrating institutional summits and tech assemblies.
-* 👥 **Discipline Club Coordinator (Apna SAC)**: Successfully directed coordination across **25+ college events** and campus student initiatives.
-* 🎙️ **Technical Training & Speaking**: Facilitated technical demonstrations and onboarding workshops for institutional staff and student communities.
+#### Achievements & Leadership
+* **First Prize — Gravitation 2024 (Shark Tank Style):** Recognized for technology venture modeling, system viability, and executive presentation.
+* **Best Event Management Award:** Commended for operational excellence in coordinating institutional summits and technical conferences.
+* **Discipline Club Coordinator (Apna SAC):** Directed student logistics and team coordination across **25+ college events**.
+* **Technical Training & Speaking:** Conducted hands-on technical demonstrations and training sessions across institutional workshops and user groups.
 
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
+---
 
-### GitHub Activity & Telemetry
+### Contact
 
-<div align="center">
-  <img src="assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" width="100%" />
-</div>
+Feel free to connect regarding **government digital initiatives, software delivery, technical training programs, or applied AI/data solutions**:
 
-* **Statewide Implementations:** Government and departmental systems operate within dedicated institutional infrastructure governed by statutory compliance and security requirements.
-* **Public Engineering:** Open-source repositories focus on applied machine learning, predictive analytics, automated utilities, and reproducible data science pipelines.
-* **Autonomous Maintenance:** This profile's showcased projects and telemetry are maintained through scheduled Python automation scripts running on GitHub Actions.
-
-<img src="assets/technical-divider.svg" alt="Section Divider" width="100%" />
-
-### Professional Inquiries & Connect
-
-I welcome conversations regarding **statewide digital transformation initiatives, enterprise software rollouts, technical training engagements, and applied AI/data solutions**.
-
-<p align="left">
-  <a href="mailto:dwivediabhay727@gmail.com">
-    <img src="https://img.shields.io/badge/Email-dwivediabhay727%40gmail.com-D97706?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-1E3A8A?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://abhay-portfolio-pi-tan.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-Interactive_Site-2B6CB0?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/AbhayDw">
-    <img src="https://img.shields.io/badge/GitHub-AbhayDw-1A1D20?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</p>
-
-```text
-Location:       Bhopal, Madhya Pradesh, India
-Timezone:       IST (UTC +5:30)
-Official Email: dwivediabhay727@gmail.com
-```
-
-<div align="center">
-  <sub>Engineered with an editorial aesthetic for Abhay Dwivedi • Synchronized via GitHub Actions</sub>
-</div>
+* **Email:** [dwivediabhay727@gmail.com](mailto:dwivediabhay727@gmail.com)
+* **LinkedIn:** [linkedin.com/in/abhay-dwivedi-6a8aa4279](https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/)
+* **Portfolio:** [abhay-portfolio-pi-tan.vercel.app](https://abhay-portfolio-pi-tan.vercel.app/)
+* **GitHub:** [github.com/AbhayDw](https://github.com/AbhayDw)
+* **Location:** Bhopal, Madhya Pradesh, India
