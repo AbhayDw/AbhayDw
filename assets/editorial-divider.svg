@@ -1,0 +1,19 @@
+<svg width="100%" height="24" viewBox="0 0 920 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hairline background rule -->
+  <line x1="0" y1="12" x2="920" y2="12" stroke="#252D37" stroke-width="1" />
+  
+  <!-- Left accent anchor -->
+  <rect x="0" y="10" width="16" height="4" fill="#D97706" />
+  
+  <!-- Center editorial crest / diamond node -->
+  <g transform="translate(460, 12)">
+    <line x1="-120" y1="0" x2="-20" y2="0" stroke="#3182CE" stroke-width="1.5" />
+    <line x1="20" y1="0" x2="120" y2="0" stroke="#3182CE" stroke-width="1.5" />
+    <polygon points="0,-6 6,0 0,6 -6,0" fill="#D97706" />
+    <circle cx="-12" cy="0" r="2" fill="#3182CE" />
+    <circle cx="12" cy="0" r="2" fill="#3182CE" />
+  </g>
+  
+  <!-- Right accent anchor -->
+  <rect x="904" y="10" width="16" height="4" fill="#3182CE" />
+</svg>
