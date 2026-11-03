@@ -3,7 +3,7 @@ import socketserver
 import os
 import sys
 
-PORT = 8080
+DEFAULT_PORT = 8080
 DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -12,7 +12,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhay Dwivedi — GitHub Profile Preview</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-dark.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     body {
@@ -23,7 +23,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
     }
     .container {
-      max-width: 940px;
+      max-width: 960px;
       margin: 0 auto;
       background: #161b22;
       border: 1px solid #30363d;
@@ -82,16 +82,31 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       border: 1px solid #30363d !important;
       padding: 12px 14px !important;
     }
+    .theme-toggle-btn {
+      background: #21262d;
+      border: 1px solid #363b42;
+      color: #c9d1d9;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .theme-toggle-btn:hover {
+      background: #30363d;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="top-bar">
       <div>
-        <strong>Previewing:</strong> <code>AbhayDw / README.md</code> (Local Server)
+        <strong>Previewing:</strong> <code>AbhayDw / README.md</code>
       </div>
-      <div class="badge-status">
-        <span class="status-dot"></span> Local Host Active (Port 8080)
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+        <div class="badge-status">
+          <span class="status-dot"></span> Live Localhost Active
+        </div>
       </div>
     </div>
     <div id="content" class="markdown-body">
@@ -100,10 +115,30 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
 
   <script>
-    fetch('/README.md')
+    let isDark = true;
+    function toggleTheme() {
+      isDark = !isDark;
+      const html = document.documentElement;
+      const container = document.querySelector('.container');
+      const body = document.body;
+      if (isDark) {
+        body.style.backgroundColor = '#0d1117';
+        container.style.backgroundColor = '#161b22';
+        container.style.borderColor = '#30363d';
+        html.setAttribute('data-color-mode', 'dark');
+        html.setAttribute('data-dark-theme', 'dark_dimmed');
+      } else {
+        body.style.backgroundColor = '#f6f8fa';
+        container.style.backgroundColor = '#ffffff';
+        container.style.borderColor = '#d0d7de';
+        html.setAttribute('data-color-mode', 'light');
+        html.setAttribute('data-light-theme', 'light');
+      }
+    }
+
+    fetch('/README.md?t=' + Date.now())
       .then(response => response.text())
       .then(markdown => {
-        // Set marked options
         marked.setOptions({
           gfm: true,
           breaks: true
@@ -135,12 +170,28 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
 def run():
     os.chdir(DIRECTORY)
     socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", PORT), CustomHandler) as httpd:
-        print(f"[PREVIEW SERVER] Serving GitHub profile preview at http://localhost:{PORT}")
-        print(f"[PREVIEW SERVER] Root directory: {DIRECTORY}")
-        sys.stdout.flush()
+    port = DEFAULT_PORT
+
+    for attempt_port in [8080, 8000, 8081, 8888, 3000]:
+        try:
+            httpd = socketserver.TCPServer(("", attempt_port), CustomHandler)
+            port = attempt_port
+            break
+        except OSError:
+            continue
+
+    print("=" * 65)
+    print(f"  ABHAY DWIVEDI — GITHUB PROFILE LOCAL PREVIEW SERVER")
+    print(f"  Live URL:   http://localhost:{port}")
+    print(f"  Directory:  {DIRECTORY}")
+    print("=" * 65)
+    print("  Press Ctrl+C in this terminal to stop the server.\n")
+    sys.stdout.flush()
+
+    try:
         httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\n[PREVIEW SERVER] Server stopped.")
 
 if __name__ == "__main__":
     run()
-
