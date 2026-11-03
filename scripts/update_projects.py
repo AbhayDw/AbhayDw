@@ -19,12 +19,12 @@ README_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 START_TAG = "<!-- START_SECTION:PROJECTS -->"
 END_TAG = "<!-- END_SECTION:PROJECTS -->"
 
-# Curated fallback projects (aligned with professional portfolio requirements)
+# Curated verified projects (prominently displayed; prioritized as requested)
 CURATED_PROJECTS = [
     {
         "name": "AI Powered Car Price Prediction",
         "description": "End-to-end regression modeling and feature engineering pipeline predicting pre-owned vehicle valuations with cross-validated evaluation.",
-        "language": "Python / Scikit-learn",
+        "language": "Python • Scikit-learn",
         "repo_url": "https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/",
         "topics": ["machine-learning", "regression", "scikit-learn"]
@@ -32,7 +32,7 @@ CURATED_PROJECTS = [
     {
         "name": "Emergency Patient Priority Prediction",
         "description": "Clinical triage prioritization system utilizing multi-class predictive modeling to categorize patient acuity and assist hospital admissions.",
-        "language": "Python / ML",
+        "language": "Python • ML",
         "repo_url": "https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/",
         "topics": ["healthcare-ai", "classification", "data-analytics"]
@@ -40,31 +40,31 @@ CURATED_PROJECTS = [
     {
         "name": "Breast Cancer Detection",
         "description": "Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation.",
-        "language": "Python / Scikit-learn",
+        "language": "Python • Scikit-learn",
         "repo_url": "https://github.com/AbhayDw/Breast-Cancer-Detection",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/",
         "topics": ["biomedical", "classification", "diagnostics"]
     },
     {
-        "name": "Titanic Survival Prediction",
-        "description": "Rigorous exploratory data analysis (EDA), probabilistic feature engineering, and ensemble classification on demographic survival factors.",
-        "language": "Python / Pandas / ML",
-        "repo_url": "https://github.com/AbhayDw/Titanic-Survival-Prediction",
-        "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/",
-        "topics": ["eda", "classification", "statistics"]
-    },
-    {
         "name": "California Housing Price Prediction",
         "description": "Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning.",
-        "language": "Python / Scikit-learn",
+        "language": "Python • Scikit-learn",
         "repo_url": "https://github.com/AbhayDw/California-Housing-Price-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/",
         "topics": ["regression", "geospatial", "feature-engineering"]
     },
     {
+        "name": "Titanic Survival Prediction",
+        "description": "Exploratory data analysis (EDA), probabilistic feature engineering, and ensemble classification on demographic survival factors.",
+        "language": "Python • Pandas • ML",
+        "repo_url": "https://github.com/AbhayDw/Titanic-Survival-Prediction",
+        "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/",
+        "topics": ["eda", "classification", "statistics"]
+    },
+    {
         "name": "Movie Recommendation System",
-        "description": "Hybrid content-based and collaborative filtering recommendation engine utilizing cosine similarity and vector space representations.",
-        "language": "Python / NLP / Vectors",
+        "description": "Hybrid content-based recommendation engine utilizing cosine similarity matrices and high-dimensional vector representations.",
+        "language": "Python • NLP • Vectors",
         "repo_url": "https://github.com/AbhayDw/Movie-Recommendation-System",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/",
         "topics": ["recommender-system", "nlp", "vector-similarity"]
@@ -87,18 +87,21 @@ def fetch_portfolio_repos():
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read().decode("utf-8"))
     except Exception as e:
-        print(f"[SYNC] Notice: Unable to query live GitHub API ({e}). Using curated project portfolio.")
+        print(f"[SYNC] Notice: Unable to query live GitHub API ({e}). Using curated verified portfolio.")
         return []
 
     portfolio_repos = []
+    seen_names = set()
     for repo in data:
         if repo.get("fork") or repo.get("archived"):
             continue
 
         topics = [t.lower() for t in repo.get("topics", [])]
-        if "portfolio" in topics:
+        name = repo.get("name", "")
+        if "portfolio" in topics and name not in seen_names:
+            seen_names.add(name)
             portfolio_repos.append({
-                "name": repo.get("name", "").replace("-", " ").title(),
+                "name": name.replace("-", " ").title(),
                 "description": repo.get("description") or "Production engineering project and implementation repository.",
                 "language": repo.get("language") or "Python",
                 "repo_url": repo.get("html_url"),
@@ -110,39 +113,37 @@ def fetch_portfolio_repos():
     return portfolio_repos
 
 def format_cell_content(p):
-    """Formats project card for standard GitHub Flavored Markdown table."""
+    """Formats an individual project card for clean GFM rendering in Light & Dark modes."""
     name = p["name"]
     desc = p["description"]
     lang = p["language"]
     repo_url = p["repo_url"]
     demo_url = p.get("demo_url", "")
     
-    demo_part = f" • <a href=\"{demo_url}\">Live System Demo ↗</a>" if demo_url else ""
+    demo_link = f" &nbsp;•&nbsp; <a href=\"{demo_url}\">Live Demo ↗</a>" if demo_url else ""
     
     return (
         f"<strong><a href=\"{repo_url}\">{name}</a></strong><br/>"
-        f"<em>{desc}</em><br/><br/>"
-        f"<strong>Core Stack:</strong> <code>{lang}</code><br/>"
-        f"<a href=\"{repo_url}\">Inspect Repository ↗</a>{demo_part}"
+        f"<sub>{desc}</sub><br/><br/>"
+        f"<strong>Stack:</strong> <code>{lang}</code><br/>"
+        f"<a href=\"{repo_url}\">Inspect Repository ↗</a>{demo_link}"
     )
 
 def generate_markdown(projects):
-    """Formats projects into a robust 2-column Markdown table."""
+    """Formats 4-6 projects into a clean 2-column GitHub Flavored Markdown table."""
     lines = [
-        "| Architecture & Implementation | Architecture & Implementation |",
+        "| Featured Implementation | Featured Implementation |",
         "| :--- | :--- |"
     ]
     
-    for i in range(0, len(projects), 2):
-        p1 = projects[i]
-        p2 = projects[i + 1] if i + 1 < len(projects) else None
+    # Showcase top projects prominently
+    display_projects = projects[:6]
+    for i in range(0, len(display_projects), 2):
+        p1 = display_projects[i]
+        p2 = display_projects[i + 1] if i + 1 < len(display_projects) else None
 
-        c1 = format_cell_content(p1)
-        c2 = format_cell_content(p2) if p2 else "<em>Additional production systems and case studies under active deployment.</em>"
-
-        # Escape pipe symbols if any exist inside cell
-        c1 = c1.replace("|", "&#124;")
-        c2 = c2.replace("|", "&#124;")
+        c1 = format_cell_content(p1).replace("|", "&#124;")
+        c2 = format_cell_content(p2).replace("|", "&#124;") if p2 else "<em>Additional repositories under active deployment.</em>"
 
         lines.append(f"| {c1} | {c2} |")
 
