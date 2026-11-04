@@ -11,253 +11,217 @@ def get_font(name, size):
             pass
     return ImageFont.load_default()
 
-def draw_tech_icon(draw, tech_id, cx, cy, r=16):
-    """Draws authentic recognizable tech icons with official brand colors."""
-    if tech_id == "python":
-        draw.ellipse([(cx - r + 3, cy - r + 3), (cx + 1, cy + 1)], fill=(55, 118, 171))
-        draw.ellipse([(cx - 1, cy - 1), (cx + r - 3, cy + r - 3)], fill=(255, 212, 59))
-        draw.ellipse([(cx - 5, cy - 7), (cx - 1, cy - 3)], fill=(255, 255, 255))
-        draw.ellipse([(cx + 1, cy + 3), (cx + 5, cy + 7)], fill=(55, 118, 171))
-    elif tech_id == "sql":
-        col_sql = (0, 117, 143)
-        draw.ellipse([(cx - r + 4, cy - r + 4), (cx + r - 4, cy - r + 10)], fill=(242, 145, 17))
-        draw.rectangle([(cx - r + 4, cy - r + 7), (cx + r - 4, cy + r - 6)], fill=col_sql)
-        draw.ellipse([(cx - r + 4, cy + r - 10), (cx + r - 4, cy + r - 4)], fill=col_sql)
-        draw.ellipse([(cx - r + 4, cy - 2), (cx + r - 4, cy + 4)], fill=(15, 80, 100))
-    elif tech_id == "pandas":
-        draw.rectangle([(cx - 9, cy - 9), (cx - 4, cy + 9)], fill=(231, 4, 136))
-        draw.rectangle([(cx - 2, cy - 5), (cx + 3, cy + 9)], fill=(21, 4, 88))
-        draw.rectangle([(cx + 5, cy - 9), (cx + 10, cy + 5)], fill=(255, 165, 0))
-    elif tech_id == "numpy":
-        draw.polygon([(cx, cy - 10), (cx + 9, cy - 5), (cx, cy), (cx - 9, cy - 5)], fill=(77, 171, 207))
-        draw.polygon([(cx - 9, cy - 5), (cx, cy), (cx, cy + 10), (cx - 9, cy + 5)], fill=(1, 50, 67))
-        draw.polygon([(cx, cy), (cx + 9, cy - 5), (cx + 9, cy + 5), (cx, cy + 10)], fill=(32, 100, 130))
-    elif tech_id == "scikitlearn":
-        draw.ellipse([(cx - 10, cy - 10), (cx + 2, cy + 2)], fill=(247, 147, 30))
-        draw.ellipse([(cx - 2, cy - 2), (cx + 10, cy + 10)], fill=(52, 153, 205))
-        draw.ellipse([(cx - 4, cy - 4), (cx + 4, cy + 4)], fill=(22, 27, 34))
-    elif tech_id == "langchain":
-        col_lc = (0, 166, 126)
-        draw.ellipse([(cx - 9, cy - 6), (cx, cy + 6)], outline=col_lc, width=3)
-        draw.ellipse([(cx, cy - 6), (cx + 9, cy + 6)], outline=(40, 200, 160), width=3)
-    elif tech_id == "gemini":
-        col_gem = (26, 115, 232)
-        draw.polygon([(cx, cy - 12), (cx + 3, cy - 3), (cx + 12, cy), (cx + 3, cy + 3),
-                      (cx, cy + 12), (cx - 3, cy + 3), (cx - 12, cy), (cx - 3, cy - 3)],
-                     fill=col_gem)
-        draw.ellipse([(cx - 3, cy - 3), (cx + 3, cy + 3)], fill=(255, 255, 255))
-    elif tech_id == "postgresql":
-        col_pg = (51, 103, 145)
-        draw.ellipse([(cx - 10, cy - 8), (cx + 8, cy + 8)], fill=col_pg)
-        draw.ellipse([(cx - 3, cy - 5), (cx + 10, cy + 5)], fill=(65, 130, 180))
-        draw.ellipse([(cx + 4, cy - 2), (cx + 8, cy + 2)], fill=(255, 255, 255))
-    elif tech_id == "mysql":
-        draw.ellipse([(cx - 9, cy - 6), (cx + 7, cy + 6)], fill=(0, 97, 138))
-        draw.polygon([(cx + 5, cy - 8), (cx + 10, cy), (cx + 5, cy + 4)], fill=(228, 142, 0))
-    elif tech_id == "powerbi":
-        draw.rectangle([(cx - 9, cy + 1), (cx - 5, cy + 9)], fill=(242, 200, 17))
-        draw.rectangle([(cx - 3, cy - 4), (cx + 1, cy + 9)], fill=(232, 162, 0))
-        draw.rectangle([(cx + 3, cy - 9), (cx + 7, cy + 9)], fill=(242, 175, 0))
-    elif tech_id == "excel":
-        draw.rectangle([(cx - 9, cy - 9), (cx + 9, cy + 9)], fill=(33, 115, 70))
-        draw.text((cx - 4, cy - 8), "X", fill=(255, 255, 255), font=get_font("arialbd.ttf", 13))
-    elif tech_id == "git":
-        col_git = (240, 80, 50)
-        draw.polygon([(cx, cy - 10), (cx + 10, cy), (cx, cy + 10), (cx - 10, cy)], fill=col_git)
-        draw.line([(cx - 4, cy + 4), (cx + 4, cy - 4)], fill=(255, 255, 255), width=2)
-        draw.ellipse([(cx - 6, cy + 2), (cx - 2, cy + 6)], fill=(255, 255, 255))
-        draw.ellipse([(cx + 2, cy - 6), (cx + 6, cy - 2)], fill=(255, 255, 255))
-    elif tech_id == "github":
-        draw.ellipse([(cx - 9, cy - 9), (cx + 9, cy + 9)], fill=(240, 246, 252))
-        draw.ellipse([(cx - 6, cy - 4), (cx + 6, cy + 7)], fill=(13, 17, 23))
-    elif tech_id == "vscode":
-        col_vs = (0, 122, 204)
-        draw.polygon([(cx - 8, cy - 4), (cx - 2, cy - 9), (cx + 7, cy - 7), (cx + 2, cy),
-                      (cx + 7, cy + 7), (cx - 2, cy + 9), (cx - 8, cy + 4)], fill=col_vs)
-        draw.polygon([(cx - 4, cy - 2), (cx + 3, cy), (cx - 4, cy + 2)], fill=(255, 255, 255))
-    elif tech_id == "jupyter":
-        draw.ellipse([(cx - 9, cy - 6), (cx + 9, cy + 6)], outline=(243, 118, 38), width=3)
-        draw.ellipse([(cx - 3, cy - 10), (cx + 3, cy - 4)], fill=(118, 118, 118))
-        draw.ellipse([(cx - 3, cy + 4), (cx + 3, cy + 10)], fill=(243, 118, 38))
-    else:
-        draw.ellipse([(cx - 7, cy - 7), (cx + 7, cy + 7)], fill=(56, 189, 248))
+def create_rich_artistic_header(output_path, num_frames=32):
+    # Render at 2x supersampling for razor-sharp retina quality (1920x620 -> 960x310)
+    w, h = 1920, 620
+    target_w, target_h = 960, 310
 
-def create_exceptional_header(output_path, num_frames=30):
-    w, h = 1920, 600
-    target_w, target_h = 960, 300
+    # Typography
+    font_kicker = get_font("consola.ttf", 20)
+    font_name = get_font("bahnschrift.ttf", 74)
+    font_title = get_font("segoeuib.ttf", 34)
+    font_sub = get_font("segoeui.ttf", 22)
+    font_pill = get_font("segoeuib.ttf", 19)
+    font_meta = get_font("segoeui.ttf", 21)
+    font_tech_name = get_font("segoeuib.ttf", 18)
 
-    font_mono_small = get_font("consola.ttf", 20)
-    font_terminal_cmd = get_font("consola.ttf", 22)
-    font_name = get_font("bahnschrift.ttf", 68)
-    font_title = get_font("segoeuib.ttf", 32)
-    font_subtitle = get_font("segoeui.ttf", 22)
-    font_status = get_font("segoeui.ttf", 20)
-    font_badge = get_font("segoeuib.ttf", 20)
-    font_badge_sub = get_font("consola.ttf", 16)
+    # Rich, Prestigious Luxury Color Palette
+    col_bg_top = (10, 14, 23)        # Deep obsidian night
+    col_bg_bot = (7, 10, 18)         # Deepest black-slate
+    col_border = (30, 42, 60)        # Refined indigo border
+    
+    col_gold = (245, 175, 45)        # Topaz Warm Gold
+    col_gold_light = (254, 215, 120) # Champagne Highlight
+    col_amber = (225, 115, 30)       # Molten Amber Copper
+    col_ultramarine = (59, 130, 246) # Vivid Ultramarine Blue
+    col_cyan_glow = (56, 189, 248)   # Electric Cyan
+    col_emerald = (16, 185, 129)     # Jade Green
+    col_white = (255, 255, 255)      # Crisp Pearl White
+    col_ivory = (241, 245, 249)      # Soft Ivory
+    col_slate = (148, 163, 184)      # Refined Slate
 
-    col_bg = (13, 17, 23)           # GitHub Deep Dark
-    col_card_bg = (22, 27, 34)      # GitHub Dark Card
-    col_border = (48, 54, 61)       # GitHub Hairline Border
-    col_text_white = (240, 246, 252)# Crisp White
-    col_text_muted = (139, 148, 158)# Muted Slate
-    col_cyan = (56, 189, 248)       # Cyan Accent
-    col_amber = (245, 158, 11)      # Amber Accent
-    col_emerald = (16, 185, 129)    # Online / Green
-    col_rail = (33, 42, 54)         # Rail lines
-
-    track1_items = [
-        {"id": "python", "name": "Python", "sub": "Core / AI"},
-        {"id": "scikitlearn", "name": "Scikit-Learn", "sub": "ML / Eval"},
-        {"id": "pandas", "name": "Pandas", "sub": "Dataframes"},
-        {"id": "numpy", "name": "NumPy", "sub": "Vectors"},
-        {"id": "langchain", "name": "LangChain", "sub": "Agentic AI"},
-        {"id": "gemini", "name": "Gemini", "sub": "GenAI"},
-        {"id": "sql", "name": "SQL", "sub": "Querying"}
+    tech_nodes = [
+        {"name": "Python", "angle_deg": 0, "radius": 240, "color": (59, 130, 246), "accent": (245, 175, 45)},
+        {"name": "Scikit-Learn", "angle_deg": 48, "radius": 175, "color": (225, 115, 30), "accent": (56, 189, 248)},
+        {"name": "Pandas", "angle_deg": 96, "radius": 260, "color": (236, 72, 153), "accent": (147, 51, 234)},
+        {"name": "SQL / DB", "angle_deg": 144, "radius": 190, "color": (0, 180, 216), "accent": (245, 175, 45)},
+        {"name": "LangChain", "angle_deg": 192, "radius": 250, "color": (16, 185, 129), "accent": (52, 211, 153)},
+        {"name": "PostgreSQL", "angle_deg": 240, "radius": 180, "color": (67, 97, 238), "accent": (96, 165, 250)},
+        {"name": "Power BI", "angle_deg": 288, "radius": 235, "color": (245, 175, 45), "accent": (225, 115, 30)},
+        {"name": "Git / CI", "angle_deg": 330, "radius": 160, "color": (239, 68, 68), "accent": (245, 175, 45)},
     ]
 
-    track2_items = [
-        {"id": "postgresql", "name": "PostgreSQL", "sub": "Relational"},
-        {"id": "mysql", "name": "MySQL", "sub": "Database"},
-        {"id": "powerbi", "name": "Power BI", "sub": "Analytics"},
-        {"id": "excel", "name": "Excel", "sub": "Modeling"},
-        {"id": "git", "name": "Git", "sub": "VCS"},
-        {"id": "github", "name": "GitHub", "sub": "Actions / CI"},
-        {"id": "vscode", "name": "VS Code", "sub": "Editor"},
-        {"id": "jupyter", "name": "Jupyter", "sub": "Notebooks"}
-    ]
-
-    card_w = 230
-    card_h = 76
-    spacing = 20
-    unit_w_t1 = (card_w + spacing)
-    total_w_t1 = unit_w_t1 * len(track1_items)
-
-    unit_w_t2 = (card_w + spacing)
-    total_w_t2 = unit_w_t2 * len(track2_items)
+    orb_cx = 1450
+    orb_cy = 310
 
     frames = []
 
     for frame_idx in range(num_frames):
         t = frame_idx / num_frames
-        im = Image.new("RGB", (w, h), color=col_bg)
+        phase = t * 2 * math.pi
+
+        im = Image.new("RGB", (w, h), color=col_bg_top)
         draw = ImageDraw.Draw(im)
 
-        # 1. Subtle Engineering Grid
-        grid_size = 50
-        for gx in range(0, w, grid_size):
-            draw.line([(gx, 0), (gx, h)], fill=(18, 24, 33), width=1)
-        for gy in range(0, h, grid_size):
-            draw.line([(0, gy), (w, gy)], fill=(18, 24, 33), width=1)
+        # 1. Subtle luxury vertical gradient background
+        for y in range(0, h, 4):
+            ratio = y / h
+            r = int(col_bg_top[0] * (1 - ratio) + col_bg_bot[0] * ratio)
+            g = int(col_bg_top[1] * (1 - ratio) + col_bg_bot[1] * ratio)
+            b = int(col_bg_top[2] * (1 - ratio) + col_bg_bot[2] * ratio)
+            draw.rectangle([(0, y), (w, y + 4)], fill=(r, g, b))
 
-        # 2. Terminal Header Bar
-        draw.rectangle([(16, 16), (w - 16, h - 16)], outline=col_border, width=2)
-        draw.line([(16, 68), (w - 16, 68)], fill=col_border, width=2)
+        # Ambient deep sapphire radial glow in the right quadrant
+        glow_rad = 340
+        for gr in range(glow_rad, 60, -35):
+            g_alpha = (1 - gr / glow_rad) * 0.15
+            gr_col = (int(10 + 35 * g_alpha), int(16 + 55 * g_alpha), int(30 + 110 * g_alpha))
+            draw.ellipse([(orb_cx - gr, orb_cy - gr), (orb_cx + gr, orb_cy + gr)], outline=gr_col, width=2)
 
-        draw.ellipse([(36, 36), (50, 50)], fill=(239, 68, 68))
-        draw.ellipse([(60, 36), (74, 50)], fill=(245, 158, 11))
-        draw.ellipse([(84, 36), (98, 50)], fill=(16, 185, 129))
+        # 2. Refined Architectural Frame & Precision Registration Corner Brackets
+        draw.rectangle([(20, 20), (w - 20, h - 20)], outline=col_border, width=2)
+        
+        c_len = 32
+        draw.line([(20, 20), (20 + c_len, 20)], fill=col_gold, width=4)
+        draw.line([(20, 20), (20, 20 + c_len)], fill=col_gold, width=4)
 
-        terminal_title = "abhaydw@workstation: ~/identity/ecosystem — bash"
-        draw.text((120, 32), terminal_title, font=font_mono_small, fill=col_text_muted)
+        draw.line([(w - 20 - c_len, 20), (w - 20, 20)], fill=col_ultramarine, width=4)
+        draw.line([(w - 20, 20), (w - 20, 20 + c_len)], fill=col_ultramarine, width=4)
 
-        pulse_val = 0.5 + 0.5 * math.sin(t * 2 * math.pi)
-        status_color = (int(16 + 10 * pulse_val), int(185 + 40 * pulse_val), 129)
-        draw.ellipse([(w - 190, 39), (w - 176, 53)], fill=status_color)
-        draw.text((w - 165, 33), "ACTIVE SYSTEM", font=font_mono_small, fill=col_emerald)
+        draw.line([(20, h - 20 - c_len), (20, h - 20)], fill=col_cyan_glow, width=4)
+        draw.line([(20, h - 20), (20 + c_len, h - 20)], fill=col_cyan_glow, width=4)
 
-        split_x = 930
-        draw.line([(split_x, 68), (split_x, h - 16)], fill=(30, 38, 50), width=2)
+        draw.line([(w - 20 - c_len, h - 20), (w - 20, h - 20)], fill=col_amber, width=4)
+        draw.line([(w - 20, h - 20 - c_len), (w - 20, h - 20)], fill=col_amber, width=4)
 
-        draw.line([(16, 68), (16, 92)], fill=col_cyan, width=3)
-        draw.line([(w - 16, 68), (w - 16, 92)], fill=col_amber, width=3)
-        draw.line([(16, h - 16), (16, h - 40)], fill=col_cyan, width=3)
-        draw.line([(w - 16, h - 16), (w - 16, h - 40)], fill=col_amber, width=3)
+        # Center separator
+        sep_x = 960
+        draw.line([(sep_x, 40), (sep_x, h - 40)], fill=(25, 35, 52), width=2)
+        pulse_y = 60 + ((t * 1.3) % 1.0) * (h - 120)
+        draw.line([(sep_x, max(40, pulse_y - 40)), (sep_x, pulse_y)], fill=col_gold, width=3)
+        draw.ellipse([(sep_x - 4, pulse_y - 4), (sep_x + 4, pulse_y + 4)], fill=col_gold_light)
 
-        # Left Identity Panel
-        draw.text((60, 96), "> whoami --profile --detailed", font=font_terminal_cmd, fill=col_cyan)
-        draw.text((60, 142), "Abhay Dwivedi", font=font_name, fill=col_text_white)
+        # ----------------- LEFT PANEL: BESPOKE TYPOGRAPHIC IDENTITY -----------------
+        kicker_x, kicker_y = 80, 60
+        draw.rounded_rectangle([(kicker_x, kicker_y), (kicker_x + 460, kicker_y + 36)],
+                               radius=6, fill=(16, 24, 38), outline=(38, 54, 78), width=1)
+        draw.ellipse([(kicker_x + 14, kicker_y + 13), (kicker_x + 24, kicker_y + 23)], fill=col_gold)
+        draw.text((kicker_x + 34, kicker_y + 8), "DIGITAL SOLUTIONS & TECHNOLOGY LEADERSHIP",
+                  font=font_kicker, fill=col_gold_light)
 
-        # Blinking cursor block
-        if (frame_idx % 15) < 9:
-            name_bbox = font_name.getbbox("Abhay Dwivedi")
-            name_width = name_bbox[2] - name_bbox[0]
-            cursor_x = 60 + name_width + 12
-            draw.rectangle([(cursor_x, 154), (cursor_x + 18, 206)], fill=col_cyan)
+        name_x, name_y = 80, 118
+        draw.text((name_x, name_y), "Abhay Dwivedi", font=font_name, fill=col_white)
 
-        draw.text((62, 230), "Technology & Digital Solutions Professional", font=font_title, fill=(226, 232, 240))
+        line_y = name_y + 92
+        draw.line([(name_x, line_y), (name_x + 220, line_y)], fill=col_gold, width=4)
+        draw.line([(name_x + 220, line_y), (name_x + 580, line_y)], fill=col_ultramarine, width=2)
+        draw.line([(name_x + 580, line_y), (880, line_y)], fill=(30, 42, 60), width=1)
 
-        draw.line([(62, 284), (880, 284)], fill=(36, 46, 60), width=2)
-        draw.line([(62, 284), (200, 284)], fill=col_amber, width=3)
-        draw.ellipse([(198, 281), (206, 287)], fill=col_amber)
+        draw.text((82, line_y + 22), "Technology & Digital Solutions Professional", font=font_title, fill=col_ivory)
 
-        focus_text = "Government Digital Initiatives  |  Software Delivery  |  AI & Data  |  Client Coordination"
-        draw.text((62, 310), focus_text, font=font_subtitle, fill=(180, 192, 208))
+        pillars = [
+            ("GOVERNMENT INITIATIVES", col_gold),
+            ("SOFTWARE DELIVERY", col_ultramarine),
+            ("APPLIED AI & DATA", col_cyan_glow),
+            ("CLIENT COORDINATION", col_emerald),
+        ]
+        pill_x = 82
+        pill_y = line_y + 78
+        for p_label, p_col in pillars:
+            bbox = font_pill.getbbox(p_label)
+            pw = bbox[2] - bbox[0] + 34
+            ph = 38
+            draw.rounded_rectangle([(pill_x, pill_y), (pill_x + pw, pill_y + ph)],
+                                   radius=8, fill=(18, 25, 38), outline=(40, 56, 80), width=1)
+            draw.ellipse([(pill_x + 12, pill_y + 14), (pill_x + 20, pill_y + 22)], fill=p_col)
+            draw.text((pill_x + 28, pill_y + 9), p_label, font=font_pill, fill=col_ivory)
+            pill_x += pw + 14
 
-        loc_y = 376
-        draw.text((62, loc_y), "LOCATION:", font=font_mono_small, fill=col_amber)
-        draw.text((160, loc_y - 2), "Bhopal, Madhya Pradesh, India", font=font_status, fill=col_text_white)
+        meta_y = pill_y + 60
+        draw.text((82, meta_y), "LOC", font=font_kicker, fill=col_gold)
+        draw.text((135, meta_y - 2), "Bhopal, Madhya Pradesh, India", font=font_meta, fill=col_ivory)
 
-        draw.text((62, loc_y + 44), "STATUS:", font=font_mono_small, fill=col_emerald)
-        draw.text((160, loc_y + 42), "Available for Institutional Deployments & Technical Strategy", font=font_status, fill=col_text_muted)
+        draw.text((490, meta_y), "STATUS", font=font_kicker, fill=col_emerald)
+        draw.text((570, meta_y - 2), "Available for Institutional Deployments & Advisory", font=font_meta, fill=col_slate)
 
-        draw.text((62, loc_y + 98), "// Scope: 67+ PMCOE Colleges • Multi-tier UAT • Applied ML Pipelines", font=font_mono_small, fill=(100, 116, 139))
+        draw.text((82, meta_y + 46), "// Production Scope: 67+ PMCOE Colleges • Multi-tier UAT • Applied ML Pipelines",
+                  font=font_kicker, fill=(100, 116, 139))
 
-        # Right Technology Ecosystem Panel
-        draw.text((960, 96), "// CONNECTED TECHNOLOGY ECOSYSTEM", font=font_mono_small, fill=col_cyan)
-        draw.text((w - 220, 96), "CONTINUOUS FLOW", font=font_mono_small, fill=col_amber)
+        # ----------------- RIGHT PANEL: HARMONIC KINETIC NEXUS & ORBITAL CONSTELLATION -----------------
+        draw.text((1020, 58), "TECHNOLOGY RESONANCE & SYSTEM ECOSYSTEM", font=font_kicker, fill=col_cyan_glow)
+        draw.text((w - 200, 58), "HARMONIC FLOW", font=font_kicker, fill=col_gold)
 
-        rail1_y = 200
-        rail2_y = 410
+        orbital_radii = [100, 165, 235]
+        for idx, rad in enumerate(orbital_radii):
+            ring_col = (26, 38, 56) if idx % 2 == 0 else (34, 48, 70)
+            draw.ellipse([(orb_cx - rad, orb_cy - rad), (orb_cx + rad, orb_cy + rad)],
+                         outline=ring_col, width=1)
 
-        draw.line([(940, rail1_y), (w - 18, rail1_y)], fill=col_rail, width=3)
-        draw.line([(940, rail2_y), (w - 18, rail2_y)], fill=col_rail, width=3)
+        sweep_angle = phase
+        sweep_len = 260
+        sweep_x = orb_cx + sweep_len * math.cos(sweep_angle)
+        sweep_y = orb_cy + sweep_len * math.sin(sweep_angle)
+        draw.line([(orb_cx, orb_cy), (sweep_x, sweep_y)], fill=(38, 80, 140), width=2)
 
-        for bus_x in [1120, 1380, 1640]:
-            draw.line([(bus_x, rail1_y), (bus_x, rail2_y)], fill=(28, 36, 48), width=2)
-            bus_pulse_y = rail1_y + ((t * 1.5 + bus_x * 0.001) % 1.0) * (rail2_y - rail1_y)
-            draw.ellipse([(bus_x - 3, bus_pulse_y - 3), (bus_x + 3, bus_pulse_y + 3)], fill=col_cyan)
+        beam_dot_r = 180
+        bx = orb_cx + beam_dot_r * math.cos(sweep_angle)
+        by = orb_cy + beam_dot_r * math.sin(sweep_angle)
+        draw.ellipse([(bx - 4, by - 4), (bx + 4, by + 4)], fill=col_gold_light)
 
-        # TRACK 1: Moves right
-        shift_t1 = (t * unit_w_t1) % total_w_t1
-        base_x_t1 = 940 + shift_t1 - total_w_t1
+        wave_pts = []
+        for step in range(60):
+            w_prog = step / 59.0
+            wx = (orb_cx - 280) + w_prog * 560
+            wy = orb_cy + 45 * math.sin(w_prog * 3 * math.pi + phase) + 25 * math.cos(w_prog * 2 * math.pi - phase)
+            wave_pts.append((wx, wy))
 
-        for repeat in range(3):
-            for i, item in enumerate(track1_items):
-                cx = base_x_t1 + (repeat * total_w_t1) + (i * unit_w_t1)
-                cy = rail1_y - card_h // 2
-                if -card_w <= cx <= w:
-                    draw.rounded_rectangle([(cx, cy), (cx + card_w, cy + card_h)],
-                                           radius=10, fill=col_card_bg, outline=col_border, width=2)
-                    icon_cx = cx + 32
-                    icon_cy = cy + card_h // 2
-                    draw.rounded_rectangle([(cx + 10, cy + 10), (cx + 54, cy + card_h - 10)],
-                                           radius=8, fill=(13, 17, 23), outline=(36, 46, 60), width=1)
-                    draw_tech_icon(draw, item["id"], icon_cx, icon_cy, r=14)
+        for pt_i in range(len(wave_pts) - 1):
+            draw.line([wave_pts[pt_i], wave_pts[pt_i + 1]], fill=(32, 65, 115), width=2)
 
-                    draw.text((cx + 66, cy + 14), item["name"], font=font_badge, fill=col_text_white)
-                    draw.text((cx + 66, cy + 42), item["sub"], font=font_badge_sub, fill=col_cyan)
-                    draw.ellipse([(cx + card_w // 2 - 3, rail1_y - 3), (cx + card_w // 2 + 3, rail1_y + 3)], fill=col_cyan)
+        pulse_idx = int((t * len(wave_pts)) % len(wave_pts))
+        pw_x, pw_y = wave_pts[pulse_idx]
+        draw.ellipse([(pw_x - 6, pw_y - 6), (pw_x + 6, pw_y + 6)], fill=col_gold)
+        draw.ellipse([(pw_x - 2, pw_y - 2), (pw_x + 2, pw_y + 2)], fill=col_white)
 
-        # TRACK 2: Moves left
-        shift_t2 = (t * unit_w_t2) % total_w_t2
-        base_x_t2 = 940 - shift_t2
+        core_r = int(24 + 6 * math.sin(phase))
+        draw.ellipse([(orb_cx - core_r - 8, orb_cy - core_r - 8), (orb_cx + core_r + 8, orb_cy + core_r + 8)],
+                     outline=(40, 90, 160), width=2)
+        draw.ellipse([(orb_cx - core_r, orb_cy - core_r), (orb_cx + core_r, orb_cy + core_r)],
+                     fill=(20, 32, 52), outline=col_gold, width=3)
+        draw.ellipse([(orb_cx - 8, orb_cy - 8), (orb_cx + 8, orb_cy + 8)], fill=col_gold_light)
+        draw.ellipse([(orb_cx - 3, orb_cy - 3), (orb_cx + 3, orb_cy + 3)], fill=col_white)
 
-        for repeat in range(3):
-            for i, item in enumerate(track2_items):
-                cx = base_x_t2 + (repeat * total_w_t2) + (i * unit_w_t2)
-                cy = rail2_y - card_h // 2
-                if -card_w <= cx <= w:
-                    draw.rounded_rectangle([(cx, cy), (cx + card_w, cy + card_h)],
-                                           radius=10, fill=col_card_bg, outline=col_border, width=2)
-                    icon_cx = cx + 32
-                    icon_cy = cy + card_h // 2
-                    draw.rounded_rectangle([(cx + 10, cy + 10), (cx + 54, cy + card_h - 10)],
-                                           radius=8, fill=(13, 17, 23), outline=(36, 46, 60), width=1)
-                    draw_tech_icon(draw, item["id"], icon_cx, icon_cy, r=14)
+        for node in tech_nodes:
+            curr_angle = math.radians(node["angle_deg"]) + (phase * 0.5)
+            nx = orb_cx + node["radius"] * math.cos(curr_angle)
+            ny = orb_cy + node["radius"] * 0.75 * math.sin(curr_angle)
 
-                    draw.text((cx + 66, cy + 14), item["name"], font=font_badge, fill=col_text_white)
-                    draw.text((cx + 66, cy + 42), item["sub"], font=font_badge_sub, fill=col_amber)
-                    draw.ellipse([(cx + card_w // 2 - 3, rail2_y - 3), (cx + card_w // 2 + 3, rail2_y + 3)], fill=col_amber)
+            draw.line([(orb_cx, orb_cy), (nx, ny)], fill=(22, 34, 50), width=1)
+
+            bbox = font_tech_name.getbbox(node["name"])
+            nw = bbox[2] - bbox[0] + 46
+            nh = 42
+            x0 = nx - nw // 2
+            y0 = ny - nh // 2
+            x1 = x0 + nw
+            y1 = y0 + nh
+
+            angle_diff = abs((curr_angle - sweep_angle + math.pi) % (2 * math.pi) - math.pi)
+            is_illuminated = angle_diff < 0.45
+
+            node_border = col_gold if is_illuminated else (45, 62, 88)
+            node_fill = (22, 32, 48) if is_illuminated else (14, 20, 30)
+
+            draw.rounded_rectangle([(x0, y0), (x1, y1)], radius=10, fill=node_fill, outline=node_border,
+                                   width=2 if is_illuminated else 1)
+
+            jewel_x = x0 + 16
+            jewel_y = y0 + nh // 2
+            draw.ellipse([(jewel_x - 6, jewel_y - 6), (jewel_x + 6, jewel_y + 6)], fill=node["color"])
+            draw.ellipse([(jewel_x - 2, jewel_y - 2), (jewel_x + 2, jewel_y + 2)], fill=node["accent"])
+
+            label_col = col_white if is_illuminated else col_ivory
+            draw.text((x0 + 30, y0 + 10), node["name"], font=font_tech_name, fill=label_col)
 
         im_down = im.resize((target_w, target_h), Image.Resampling.LANCZOS)
         im_palette = im_down.convert("P", palette=Image.Palette.ADAPTIVE, colors=96)
@@ -275,4 +239,4 @@ def create_exceptional_header(output_path, num_frames=30):
 
 if __name__ == "__main__":
     out = r"C:\GitHub\AbhayDw\assets\profile-header.gif"
-    create_exceptional_header(out)
+    create_rich_artistic_header(out)
