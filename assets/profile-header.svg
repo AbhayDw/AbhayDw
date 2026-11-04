@@ -1,48 +1,52 @@
-<svg width="100%" height="260" viewBox="0 0 960 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="280" viewBox="0 0 960 280" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Fluid Animated Gradients -->
-    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Vibrant Animated Gradients -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2563EB">
-        <animate attributeName="stop-color" values="#2563EB;#7C3AED;#F97316;#2563EB" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#2563EB;#7C3AED;#EA580C;#2563EB" dur="6s" repeatCount="indefinite" />
       </stop>
       <stop offset="50%" stop-color="#7C3AED">
-        <animate attributeName="stop-color" values="#7C3AED;#EC4899;#2563EB;#7C3AED" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#7C3AED;#EA580C;#2563EB;#7C3AED" dur="6s" repeatCount="indefinite" />
       </stop>
-      <stop offset="100%" stop-color="#F97316">
-        <animate attributeName="stop-color" values="#F97316;#2563EB;#7C3AED;#F97316" dur="8s" repeatCount="indefinite" />
+      <stop offset="100%" stop-color="#EA580C">
+        <animate attributeName="stop-color" values="#EA580C;#2563EB;#7C3AED;#EA580C" dur="6s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
-    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.35" />
-      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#F97316" stop-opacity="0.35" />
-    </linearGradient>
+    <!-- Ambient Colorful Mesh Blobs -->
+    <radialGradient id="meshBlue" cx="15%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#DBEAFE" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#DBEAFE" stop-opacity="0" />
+    </radialGradient>
 
-    <linearGradient id="waveGrad2" x1="100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2" />
-      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#EC4899" stop-opacity="0.2" />
-    </linearGradient>
+    <radialGradient id="meshPurple" cx="85%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#F3E8FF" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#F3E8FF" stop-opacity="0" />
+    </radialGradient>
 
-    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#3B82F6" flood-opacity="0.18" />
+    <radialGradient id="meshAmber" cx="80%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#FFEDD5" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#FFEDD5" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#2563EB" flood-opacity="0.15" />
     </filter>
 
     <style>
-      .masthead-title {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        font-size: 46px;
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        font-size: 50px;
         font-weight: 850;
         letter-spacing: -0.5px;
       }
-      .masthead-subtitle {
+      .subtitle-text {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         font-size: 20px;
         font-weight: 600;
         fill: #334155;
       }
-      .kicker-tag {
+      .tagline-text {
         font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
         font-size: 12px;
         font-weight: 700;
@@ -62,132 +66,121 @@
         fill: #64748B;
       }
 
-      /* Harmonic Wave Animations */
-      @keyframes waveFlow1 {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(-80px); }
-        100% { transform: translateX(0); }
-      }
-      @keyframes waveFlow2 {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(90px); }
-        100% { transform: translateX(0); }
-      }
-      @keyframes floatBadge1 {
+      @keyframes floatA {
         0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-5px); }
+        50% { transform: translateY(-6px); }
       }
-      @keyframes floatBadge2 {
+      @keyframes floatB {
         0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-7px); }
+        50% { transform: translateY(-8px); }
       }
-      @keyframes pulseDot {
+      @keyframes pulseBeacon {
         0%, 100% { transform: scale(1); opacity: 1; }
         50% { transform: scale(1.4); opacity: 0.6; }
       }
+      @keyframes orbitRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
 
-      .wave-layer1 { animation: waveFlow1 10s ease-in-out infinite; }
-      .wave-layer2 { animation: waveFlow2 12s ease-in-out infinite; }
-      .floating-badge-a { animation: floatBadge1 4s ease-in-out infinite; }
-      .floating-badge-b { animation: floatBadge2 5s ease-in-out infinite; }
-      .live-dot { transform-origin: 520px 224px; animation: pulseDot 2s ease-in-out infinite; }
+      .floating-a { animation: floatA 4s ease-in-out infinite; }
+      .floating-b { animation: floatB 5s ease-in-out infinite; }
+      .beacon-dot { transform-origin: 520px 242px; animation: pulseBeacon 2s ease-in-out infinite; }
+      .orbital-ring { transform-origin: 855px 125px; animation: orbitRotate 20s linear infinite; }
     </style>
   </defs>
 
-  <!-- Clean, Bright Pearl Canvas with Subtle Soft Border -->
-  <rect x="2" y="2" width="956" height="256" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
-  
-  <!-- Subtle Architectural Corner Accents -->
-  <path d="M 16 32 L 16 16 L 32 16" stroke="#2563EB" stroke-width="3" stroke-linecap="round" fill="none" />
-  <path d="M 944 32 L 944 16 L 928 16" stroke="#F97316" stroke-width="3" stroke-linecap="round" fill="none" />
-  <path d="M 16 228 L 16 244 L 32 244" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none" />
-  <path d="M 944 228 L 944 244 L 928 244" stroke="#2563EB" stroke-width="3" stroke-linecap="round" fill="none" />
+  <!-- Clean, Bright Pearl Canvas with Subtle Shadow and Border -->
+  <rect x="2" y="2" width="956" height="276" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
 
-  <!-- Fluid Harmonic Kinetic Waves at Base -->
-  <g class="wave-layer1">
-    <path d="M -100 230 C 150 190, 350 255, 600 215 C 850 175, 1050 245, 1200 220 L 1200 260 L -100 260 Z" fill="url(#waveGrad1)" />
-  </g>
-  <g class="wave-layer2">
-    <path d="M -100 240 C 200 250, 450 195, 700 235 C 950 265, 1100 205, 1200 230 L 1200 260 L -100 260 Z" fill="url(#waveGrad2)" />
-  </g>
+  <!-- Ambient Light Mesh Background -->
+  <rect x="3" y="3" width="954" height="274" rx="17" fill="url(#meshBlue)" />
+  <rect x="3" y="3" width="954" height="274" rx="17" fill="url(#meshPurple)" />
+  <rect x="3" y="3" width="954" height="274" rx="17" fill="url(#meshAmber)" />
 
-  <!-- Left: Typographic Identity -->
-  <g transform="translate(42, 38)">
-    <!-- Top Pill Kicker -->
-    <rect x="0" y="0" width="375" height="26" rx="6" fill="#EFF6FF" stroke="#DBEAFE" stroke-width="1" />
-    <circle cx="12" cy="13" r="4" fill="#2563EB" />
-    <text x="24" y="17" class="kicker-tag">TECHNOLOGY &amp; DIGITAL SOLUTIONS PROFESSIONAL</text>
+  <!-- Architectural Corner Ticks -->
+  <path d="M 18 34 L 18 18 L 34 18" stroke="#2563EB" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 942 34 L 942 18 L 926 18" stroke="#EA580C" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 18 246 L 18 262 L 34 262" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 942 246 L 942 262 L 926 262" stroke="#2563EB" stroke-width="3" stroke-linecap="round" fill="none" />
 
-    <!-- Main Name with Flowing Vibrant Gradient -->
-    <text x="0" y="66" class="masthead-title" fill="url(#brandGradient)" filter="url(#subtleGlow)">Abhay Dwivedi</text>
+  <!-- Main Identity (Left Panel) -->
+  <g transform="translate(44, 34)">
+    <!-- Top Monospace Kicker Pill -->
+    <rect x="0" y="0" width="375" height="28" rx="7" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
+    <circle cx="14" cy="14" r="4.5" fill="#2563EB" />
+    <text x="26" y="18" class="tagline-text">TECHNOLOGY &amp; DIGITAL SOLUTIONS</text>
+
+    <!-- Main Name with Living Dynamic Gradient -->
+    <text x="0" y="70" class="title-text" fill="url(#titleGrad)" filter="url(#softGlow)">Abhay Dwivedi</text>
 
     <!-- Subtitle Role -->
-    <text x="2" y="100" class="masthead-subtitle">State Initiatives &bull; Software Delivery &bull; Applied AI &bull; Client Coordination</text>
+    <text x="2" y="106" class="subtitle-text">State Initiatives &bull; Software Delivery &bull; Applied AI &bull; Client Coordination</text>
 
-    <!-- Four Strategic Pillars in Clean Aligned Badges -->
-    <g transform="translate(0, 118)">
-      <!-- Badge 1 -->
-      <g class="floating-badge-a">
-        <rect x="0" y="0" width="198" height="32" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
-        <circle cx="14" cy="16" r="4.5" fill="#2563EB" />
-        <text x="28" y="21" class="badge-text">Government Platforms</text>
+    <!-- 4 Interactive-Feeling Pill Cards with Colorful Indicator Jewels -->
+    <g transform="translate(0, 126)">
+      <!-- Pill 1 -->
+      <g class="floating-a">
+        <rect x="0" y="0" width="200" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
+        <circle cx="16" cy="17" r="5" fill="#2563EB" />
+        <text x="30" y="22" class="badge-text">Government Platforms</text>
       </g>
 
-      <!-- Badge 2 -->
-      <g transform="translate(208, 0)" class="floating-badge-b">
-        <rect x="0" y="0" width="186" height="32" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
-        <circle cx="14" cy="16" r="4.5" fill="#F97316" />
-        <text x="28" y="21" class="badge-text">Implementation &amp; UAT</text>
+      <!-- Pill 2 -->
+      <g transform="translate(210, 0)" class="floating-b">
+        <rect x="0" y="0" width="190" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
+        <circle cx="16" cy="17" r="5" fill="#EA580C" />
+        <text x="30" y="22" class="badge-text">Implementation &amp; UAT</text>
       </g>
 
-      <!-- Badge 3 -->
-      <g transform="translate(404, 0)" class="floating-badge-a">
-        <rect x="0" y="0" width="176" height="32" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
-        <circle cx="14" cy="16" r="4.5" fill="#7C3AED" />
-        <text x="28" y="21" class="badge-text">Applied AI &amp; Data</text>
+      <!-- Pill 3 -->
+      <g transform="translate(410, 0)" class="floating-a">
+        <rect x="0" y="0" width="180" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
+        <circle cx="16" cy="17" r="5" fill="#7C3AED" />
+        <text x="30" y="22" class="badge-text">Applied AI &amp; Data</text>
       </g>
 
-      <!-- Badge 4 -->
-      <g transform="translate(590, 0)" class="floating-badge-b">
-        <rect x="0" y="0" width="190" height="32" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
-        <circle cx="14" cy="16" r="4.5" fill="#10B981" />
-        <text x="28" y="21" class="badge-text">Client Coordination</text>
+      <!-- Pill 4 -->
+      <g transform="translate(600, 0)" class="floating-b">
+        <rect x="0" y="0" width="190" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
+        <circle cx="16" cy="17" r="5" fill="#10B981" />
+        <text x="30" y="22" class="badge-text">Client Coordination</text>
       </g>
     </g>
 
-    <!-- Bottom Status & Location Bar -->
-    <g transform="translate(2, 172)">
+    <!-- Bottom Meta & Live Status Bar -->
+    <g transform="translate(2, 186)">
       <text x="0" y="14" class="meta-text">📍 Bhopal, Madhya Pradesh, India</text>
       <text x="220" y="14" class="meta-text">&bull;</text>
-      <text x="236" y="14" class="meta-text">🎓 67+ PMCOE Colleges &bull; SCMS &bull; e-Setu</text>
+      <text x="236" y="14" class="meta-text">🏛️ 67+ PMCOE Colleges &bull; SCMS &bull; e-Setu</text>
       <text x="495" y="14" class="meta-text">&bull;</text>
-      <circle cx="510" cy="10" r="4.5" fill="#10B981" class="live-dot" />
+      <circle cx="510" cy="10" r="4.5" fill="#10B981" class="beacon-dot" />
       <text x="522" y="14" class="meta-text" fill="#059669" font-weight="600">Available for Deployments &amp; Strategy</text>
     </g>
   </g>
 
-  <!-- Right: Dynamic Tech Ecosystem Constellation Ring -->
-  <g transform="translate(850, 110)">
-    <!-- Rotating Ring -->
-    <circle cx="0" cy="0" r="64" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 4" />
-    <circle cx="0" cy="0" r="42" stroke="#DBEAFE" stroke-width="1.5" />
-    
-    <!-- Center Core Badge -->
-    <circle cx="0" cy="0" r="24" fill="#EFF6FF" stroke="#2563EB" stroke-width="2" />
-    <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#2563EB">SOLUTIONS</text>
+  <!-- Right: Dynamic Tech Ecosystem Satellite Nexus -->
+  <g transform="translate(855, 125)">
+    <!-- Rotating Orbital Dash Ring -->
+    <circle cx="0" cy="0" r="68" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 5" class="orbital-ring" />
+    <circle cx="0" cy="0" r="44" stroke="#DBEAFE" stroke-width="1.5" />
 
-    <!-- Satellite Nodes -->
-    <g class="floating-badge-a">
-      <circle cx="-56" cy="-28" r="14" fill="#FFFFFF" stroke="#38BDF8" stroke-width="2" />
-      <text x="-56" y="-24" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#0284C7">AI</text>
+    <!-- Center Solutions Core -->
+    <circle cx="0" cy="0" r="26" fill="#EFF6FF" stroke="#2563EB" stroke-width="2" />
+    <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#2563EB">SOLUTIONS</text>
+
+    <!-- Orbiting Tech Satellites -->
+    <g class="floating-a">
+      <circle cx="-58" cy="-30" r="15" fill="#FFFFFF" stroke="#38BDF8" stroke-width="2" />
+      <text x="-58" y="-26" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="800" fill="#0284C7">AI</text>
     </g>
-    <g class="floating-badge-b">
-      <circle cx="56" cy="-28" r="14" fill="#FFFFFF" stroke="#F97316" stroke-width="2" />
-      <text x="56" y="-24" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#EA580C">ML</text>
+    <g class="floating-b">
+      <circle cx="58" cy="-30" r="15" fill="#FFFFFF" stroke="#F97316" stroke-width="2" />
+      <text x="58" y="-26" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="800" fill="#EA580C">ML</text>
     </g>
-    <g class="floating-badge-a">
-      <circle cx="0" cy="60" r="14" fill="#FFFFFF" stroke="#10B981" stroke-width="2" />
-      <text x="0" y="64" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#059669">OPS</text>
+    <g class="floating-a">
+      <circle cx="0" cy="62" r="15" fill="#FFFFFF" stroke="#10B981" stroke-width="2" />
+      <text x="0" y="66" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="800" fill="#059669">OPS</text>
     </g>
   </g>
 </svg>

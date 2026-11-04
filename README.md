@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/profile-header.gif" alt="Abhay Dwivedi — Technology & Digital Solutions Professional" width="100%" />
+<img src="assets/profile-header.svg" alt="Abhay Dwivedi — Technology & Digital Solutions Professional" width="100%" />
 
 <br/><br/>
 
-<a href="https://abhay-portfolio-pi-tan.vercel.app/"><img src="https://img.shields.io/badge/Interactive_Portfolio-00F0FF?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio" /></a>
+<a href="https://abhay-portfolio-pi-tan.vercel.app/"><img src="https://img.shields.io/badge/Interactive_Portfolio-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
 &nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 &nbsp;&nbsp;
@@ -120,9 +120,9 @@ Over the past several years, my work has centered on bridging the gap between te
 ### 📊 GitHub Activity & Insights
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&theme=tokyonight&hide_border=true&title_color=00F0FF&icon_color=FF8A00&text_color=E2E8F0" alt="GitHub Stats" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&theme=default&hide_border=false&border_color=E2E8F0&title_color=2563EB&icon_color=EA580C&text_color=334155&bg_color=FFFFFF" alt="GitHub Stats" height="155" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&theme=tokyonight&hide_border=true&title_color=00F0FF&text_color=E2E8F0" alt="Top Languages" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&theme=default&hide_border=false&border_color=E2E8F0&title_color=2563EB&text_color=334155&bg_color=FFFFFF" alt="Top Languages" height="155" />
 </div>
 
 ---
