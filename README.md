@@ -5,16 +5,16 @@
 <br/><br/>
 
 <p align="center">
-  <a href="https://abhay-portfolio-pi-tan.vercel.app/"><strong>Portfolio Website ↗</strong></a> &nbsp;&bull;&nbsp;
-  <a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><strong>LinkedIn ↗</strong></a> &nbsp;&bull;&nbsp;
-  <a href="https://github.com/AbhayDw"><strong>GitHub ↗</strong></a> &nbsp;&bull;&nbsp;
-  <a href="mailto:dwivediabhay727@gmail.com"><strong>Direct Email ↗</strong></a> &nbsp;&bull;&nbsp;
-  <span>📍 <strong>Bhopal, Madhya Pradesh, India</strong></span>
+  <a href="https://abhay-portfolio-pi-tan.vercel.app/"><img src="assets/icons/portfolio.svg" width="15" height="15" valign="middle" alt="Portfolio" /> <strong>Portfolio Website ↗</strong></a> &nbsp;&bull;&nbsp;
+  <a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><img src="assets/icons/linkedin.svg" width="15" height="15" valign="middle" alt="LinkedIn" /> <strong>LinkedIn ↗</strong></a> &nbsp;&bull;&nbsp;
+  <a href="https://github.com/AbhayDw"><img src="assets/icons/github.svg" width="15" height="15" valign="middle" alt="GitHub" /> <strong>GitHub ↗</strong></a> &nbsp;&bull;&nbsp;
+  <a href="mailto:dwivediabhay727@gmail.com"><img src="assets/icons/email.svg" width="15" height="15" valign="middle" alt="Email" /> <strong>dwivediabhay727@gmail.com</strong></a> &nbsp;&bull;&nbsp;
+  <span><img src="assets/icons/location.svg" width="15" height="15" valign="middle" alt="Location" /> <strong>Bhopal, Madhya Pradesh, India</strong></span>
 </p>
 
 </div>
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### About Me
 
@@ -22,7 +22,7 @@ I am a **Technology & Digital Solutions Professional** working across state-leve
 
 Over the past several years, my work has centered on bridging the gap between technical engineering groups, administrative leadership, and operational end users. Rather than viewing technology solely through code, I focus on the entire implementation lifecycle: translating policy mandates into structured technical requirements, managing User Acceptance Testing (UAT), training faculty and staff across regional institutions, and engineering practical machine learning models that support operational decision-making.
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### Focus Areas
 
@@ -35,7 +35,7 @@ Over the past several years, my work has centered on bridging the gap between te
 * **AI, Data Science & Technology Solutions**  
   Developing applied predictive models, data wrangling pipelines, and generative AI/RAG workflows that convert complex operational datasets into clear, actionable intelligence.
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### Government & Institutional Project Contributions
 
@@ -57,7 +57,7 @@ Over the past several years, my work has centered on bridging the gap between te
 * **Initiative:** Heritage documentation and digital onboarding support.
 * **Contribution:** Produced technical training videos, visual media walkthroughs, and supporting communication content for departmental staff onboarding and archival workflows.
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### Professional Experience
 
@@ -78,48 +78,48 @@ Over the past several years, my work has centered on bridging the gap between te
   **Apna SAC** &nbsp;·&nbsp; *Sep 2024 – Dec 2025*  
   Managed student operations and event coordination across 25+ institutional college events. Recognized with the Best Event Management Award.
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### Selected Projects
 
 <!-- START_SECTION:PROJECTS -->
 | Project | Focus & Technical Overview | Stack & Links |
 | :--- | :--- | :--- |
-| **[AI Powered Car Price Prediction](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction)** | End-to-end regression modeling and feature engineering pipeline to predict pre-owned vehicle valuations with cross-validated evaluation. | <img src="https://skillicons.dev/icons?i=py,sklearn" height="22" alt="stack" /><br/>`Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
-| **[Emergency Patient Priority Prediction](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction)** | Clinical triage prioritization system utilizing multi-class predictive classification to assess patient acuity and support hospital admissions. | <img src="https://skillicons.dev/icons?i=py" height="22" alt="stack" /><br/>`Python, Machine Learning`<br/>[Repository ↗](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
-| **[Breast Cancer Detection](https://github.com/AbhayDw/Breast-Cancer-Detection)** | Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation. | <img src="https://skillicons.dev/icons?i=py,sklearn" height="22" alt="stack" /><br/>`Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/Breast-Cancer-Detection) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
-| **[California Housing Price Prediction](https://github.com/AbhayDw/California-Housing-Price-Prediction)** | Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning. | <img src="https://skillicons.dev/icons?i=py,sklearn" height="22" alt="stack" /><br/>`Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/California-Housing-Price-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[AI Powered Car Price Prediction](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction)** | End-to-end regression modeling and feature engineering pipeline to predict pre-owned vehicle valuations with cross-validated evaluation. | <img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" /> <img src="assets/technology/scikitlearn.svg" width="16" height="16" valign="middle" alt="Scikit-learn" /> `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction) &nbsp;&bull;&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[Emergency Patient Priority Prediction](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction)** | Clinical triage prioritization system utilizing multi-class predictive classification to assess patient acuity and support hospital admissions. | <img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" /> <img src="assets/technology/scikitlearn.svg" width="16" height="16" valign="middle" alt="ML" /> `Python, Machine Learning`<br/>[Repository ↗](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction) &nbsp;&bull;&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[Breast Cancer Detection](https://github.com/AbhayDw/Breast-Cancer-Detection)** | Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation. | <img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" /> <img src="assets/technology/scikitlearn.svg" width="16" height="16" valign="middle" alt="Scikit-learn" /> `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/Breast-Cancer-Detection) &nbsp;&bull;&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[California Housing Price Prediction](https://github.com/AbhayDw/California-Housing-Price-Prediction)** | Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning. | <img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" /> <img src="assets/technology/scikitlearn.svg" width="16" height="16" valign="middle" alt="Scikit-learn" /> `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/California-Housing-Price-Prediction) &nbsp;&bull;&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
 <!-- END_SECTION:PROJECTS -->
 
 <p align="right">
   <a href="https://github.com/AbhayDw?tab=repositories"><strong>View All Repositories on GitHub ↗</strong></a>
 </p>
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### Technical Stack & Toolchain
 
-| Category | Specialized Toolchain & Applied Competencies | Authentic Icons |
+| Category | Specialized Toolchain & Applied Competencies | Authentic Verified Marks |
 | :--- | :--- | :---: |
-| **Programming & Querying** | `Python`, `SQL` | <img src="https://skillicons.dev/icons?i=py,mysql,postgres" height="28" alt="Programming Icons" /> |
-| **Data Science & Analysis** | `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, Exploratory Data Analysis (EDA) | <img src="https://skillicons.dev/icons?i=pandas,numpy,sklearn" height="28" alt="Data Science Icons" /> |
-| **Machine Learning** | `Scikit-learn`, Linear & Logistic Regression, Multi-class Classification, Feature Engineering, Model Evaluation | <img src="https://skillicons.dev/icons?i=sklearn,py" height="28" alt="Machine Learning Icons" /> |
-| **Artificial Intelligence** | `Generative AI`, `Natural Language Processing (NLP)`, `LangChain`, `Retrieval-Augmented Generation (RAG)` | <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" height="22" /> &nbsp; <img src="https://img.shields.io/badge/Gemini_AI-1A73E8?style=flat-square&logo=google&logoColor=white" height="22" /> |
-| **Databases** | `PostgreSQL`, `MySQL` | <img src="https://skillicons.dev/icons?i=postgres,mysql" height="28" alt="Database Icons" /> |
-| **Analytics & Reporting** | `Power BI`, `Microsoft Excel (Advanced Data Modeling)` | <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" height="22" /> &nbsp; <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" height="22" /> |
-| **Tools & Workflow** | `Git`, `GitHub`, `GitHub Actions (CI/CD)`, `VS Code`, `Jupyter Notebook` | <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode" height="28" alt="Tools Icons" /> |
+| **Programming & Querying** | `Python`, `SQL` | <img src="assets/technology/python.svg" width="22" height="22" valign="middle" alt="Python" /> &nbsp; <img src="assets/technology/sql.svg" width="22" height="22" valign="middle" alt="SQL" /> |
+| **Data Science & Analysis** | `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, Exploratory Data Analysis (EDA) | <img src="assets/technology/pandas.svg" width="22" height="22" valign="middle" alt="Pandas" /> &nbsp; <img src="assets/technology/numpy.svg" width="22" height="22" valign="middle" alt="NumPy" /> &nbsp; <img src="assets/technology/matplotlib.svg" width="22" height="22" valign="middle" alt="Matplotlib" /> &nbsp; <img src="assets/technology/seaborn.svg" width="22" height="22" valign="middle" alt="Seaborn" /> |
+| **Machine Learning** | `Scikit-learn`, Linear & Logistic Regression, Multi-class Classification, Feature Engineering, Model Evaluation | <img src="assets/technology/scikitlearn.svg" width="22" height="22" valign="middle" alt="Scikit-learn" /> |
+| **Artificial Intelligence** | `Generative AI`, `Natural Language Processing (NLP)`, `LangChain`, `Retrieval-Augmented Generation (RAG)` | <img src="assets/technology/langchain.svg" width="22" height="22" valign="middle" alt="LangChain" /> &nbsp; <img src="assets/technology/gemini.svg" width="22" height="22" valign="middle" alt="Gemini" /> |
+| **Databases** | `PostgreSQL`, `MySQL` | <img src="assets/technology/postgresql.svg" width="22" height="22" valign="middle" alt="PostgreSQL" /> &nbsp; <img src="assets/technology/mysql.svg" width="22" height="22" valign="middle" alt="MySQL" /> |
+| **Analytics & Reporting** | `Power BI`, `Microsoft Excel (Advanced Data Modeling)` | <img src="assets/technology/powerbi.svg" width="22" height="22" valign="middle" alt="Power BI" /> &nbsp; <img src="assets/technology/excel.svg" width="22" height="22" valign="middle" alt="Excel" /> |
+| **Tools & Workflow** | `Git`, `GitHub`, `GitHub Actions (CI/CD)`, `VS Code`, `Jupyter Notebook` | <img src="assets/technology/git.svg" width="22" height="22" valign="middle" alt="Git" /> &nbsp; <img src="assets/technology/github.svg" width="22" height="22" valign="middle" alt="GitHub" /> &nbsp; <img src="assets/technology/vscode.svg" width="22" height="22" valign="middle" alt="VS Code" /> &nbsp; <img src="assets/technology/jupyter.svg" width="22" height="22" valign="middle" alt="Jupyter" /> |
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### GitHub Activity & Insights
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&hide_border=false&border_color=28344B&title_color=F59E0B&icon_color=FDE68A&text_color=94A3B8&bg_color=0A0D14" alt="GitHub Stats" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&hide_border=false&border_color=303A49&title_color=D2AD68&icon_color=F59E0B&text_color=AAB3BF&bg_color=080D16" alt="GitHub Stats" height="155" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&hide_border=false&border_color=28344B&title_color=F59E0B&text_color=94A3B8&bg_color=0A0D14" alt="Top Languages" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&hide_border=false&border_color=303A49&title_color=D2AD68&text_color=AAB3BF&bg_color=080D16" alt="Top Languages" height="155" />
 </div>
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### Certifications & Achievements
 
@@ -136,7 +136,7 @@ Over the past several years, my work has centered on bridging the gap between te
 * **Discipline Club Coordinator (Apna SAC):** Directed student logistics and team coordination across **25+ college events**.
 * **Technical Training & Speaking:** Conducted hands-on technical demonstrations and training sessions across institutional workshops and user groups.
 
----
+<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### Contact
 

@@ -25,7 +25,8 @@ CURATED_PROJECTS = [
         "name": "AI Powered Car Price Prediction",
         "description": "End-to-end regression modeling and feature engineering pipeline to predict pre-owned vehicle valuations with cross-validated evaluation.",
         "language": "Python, Scikit-learn",
-        "icon": "https://skillicons.dev/icons?i=py,sklearn",
+        "icons": ['<img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" />',
+                  '<img src="assets/technology/scikitlearn.svg" width="16" height="16" valign="middle" alt="Scikit-learn" />'],
         "repo_url": "https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/"
     },
@@ -33,7 +34,8 @@ CURATED_PROJECTS = [
         "name": "Emergency Patient Priority Prediction",
         "description": "Clinical triage prioritization system utilizing multi-class predictive classification to assess patient acuity and support hospital admissions.",
         "language": "Python, Machine Learning",
-        "icon": "https://skillicons.dev/icons?i=py",
+        "icons": ['<img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" />',
+                  '<img src="assets/technology/scikitlearn.svg" width="16" height="16" valign="middle" alt="ML" />'],
         "repo_url": "https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/"
     },
@@ -41,7 +43,8 @@ CURATED_PROJECTS = [
         "name": "Breast Cancer Detection",
         "description": "Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation.",
         "language": "Python, Scikit-learn",
-        "icon": "https://skillicons.dev/icons?i=py,sklearn",
+        "icons": ['<img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" />',
+                  '<img src="assets/technology/scikitlearn.svg" width="16" height="16" valign="middle" alt="Scikit-learn" />'],
         "repo_url": "https://github.com/AbhayDw/Breast-Cancer-Detection",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/"
     },
@@ -49,7 +52,8 @@ CURATED_PROJECTS = [
         "name": "California Housing Price Prediction",
         "description": "Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning.",
         "language": "Python, Scikit-learn",
-        "icon": "https://skillicons.dev/icons?i=py,sklearn",
+        "icons": ['<img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" />',
+                  '<img src="assets/technology/scikitlearn.svg" width="16" height="16" valign="middle" alt="Scikit-learn" />'],
         "repo_url": "https://github.com/AbhayDw/California-Housing-Price-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/"
     }
@@ -88,7 +92,7 @@ def fetch_portfolio_repos():
                 "name": name.replace("-", " ").title(),
                 "description": repo.get("description") or "Production engineering project and implementation repository.",
                 "language": repo.get("language") or "Python",
-                "icon": "https://skillicons.dev/icons?i=py",
+                "icons": ['<img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" />'],
                 "repo_url": repo.get("html_url"),
                 "demo_url": repo.get("homepage") or "https://abhay-portfolio-pi-tan.vercel.app/"
             })
@@ -96,7 +100,7 @@ def fetch_portfolio_repos():
     return portfolio_repos
 
 def generate_markdown(projects):
-    """Formats projects into a refined dark editorial presentation table with tech icons."""
+    """Formats projects into a refined dark editorial presentation table with local tech icons."""
     lines = [
         "| Project | Focus & Technical Overview | Stack & Links |",
         "| :--- | :--- | :--- |"
@@ -108,13 +112,13 @@ def generate_markdown(projects):
         lang = p["language"]
         repo = p["repo_url"]
         demo = p.get("demo_url", "")
-        icon_url = p.get("icon", "https://skillicons.dev/icons?i=py")
+        icons = " ".join(p.get("icons", ['<img src="assets/technology/python.svg" width="16" height="16" valign="middle" alt="Python" />']))
 
-        demo_link = f" &nbsp;·&nbsp; [Live Demo ↗]({demo})" if demo else ""
+        demo_link = f" &nbsp;&bull;&nbsp; [Live Demo ↗]({demo})" if demo else ""
         repo_link = f"[Repository ↗]({repo}){demo_link}"
         clean_desc = desc.replace("|", "/")
 
-        lines.append(f"| **[{name}]({repo})** | {clean_desc} | <img src=\"{icon_url}\" height=\"22\" alt=\"stack\" /><br/>`{lang}`<br/>{repo_link} |")
+        lines.append(f"| **[{name}]({repo})** | {clean_desc} | {icons} `{lang}`<br/>{repo_link} |")
 
     return "\n".join(lines)
 

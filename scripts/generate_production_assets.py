@@ -264,3 +264,4 @@ if __name__ == "__main__":
     generate_cinematic_horizon_production()
     generate_cinematic_horizon_svg()
     print("All production assets generated successfully.")
+
