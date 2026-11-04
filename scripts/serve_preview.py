@@ -7,92 +7,85 @@ DEFAULT_PORT = 8080
 DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 HTML_TEMPLATE = """<!DOCTYPE html>
-<html lang="en" data-color-mode="dark" data-dark-theme="dark_dimmed">
+<html lang="en" data-color-mode="light" data-light-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhay Dwivedi — GitHub Profile Preview</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+  <title>Abhay Dwivedi — Professional GitHub Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     body {
-      background-color: #0d1117;
-      color: #e6edf3;
+      background-color: #f6f8fa;
+      color: #1f2328;
       margin: 0;
       padding: 30px 15px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
     }
     .container {
-      max-width: 960px;
+      max-width: 980px;
       margin: 0 auto;
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      padding: 36px 44px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 12px;
+      padding: 40px 48px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     }
     .top-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 24px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid #30363d;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e1e4e8;
       font-size: 13px;
-      color: #8b949e;
+      color: #656d76;
     }
     .top-bar a {
-      color: #58a6ff;
+      color: #0969da;
       text-decoration: none;
+      font-weight: 600;
     }
     .badge-status {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: #1f2937;
-      border: 1px solid #374151;
-      padding: 4px 10px;
-      border-radius: 12px;
-      color: #38bdf8;
-      font-weight: 500;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      padding: 4px 12px;
+      border-radius: 14px;
+      color: #15803d;
+      font-weight: 600;
+      font-size: 12px;
     }
     .status-dot {
       width: 8px;
       height: 8px;
-      background: #10b981;
+      background: #16a34a;
       border-radius: 50%;
-      box-shadow: 0 0 8px #10b981;
+      box-shadow: 0 0 6px #22c55e;
     }
     .markdown-body {
       box-sizing: border-box;
       min-width: 200px;
       max-width: 100%;
       background-color: transparent !important;
-      color: #c9d1d9 !important;
+      color: #1f2328 !important;
     }
     .markdown-body table {
       display: table !important;
       width: 100% !important;
     }
     .markdown-body table tr {
-      background-color: #161b22 !important;
-      border-top: 1px solid #21262d !important;
+      background-color: #ffffff !important;
+      border-top: 1px solid #d0d7de !important;
+    }
+    .markdown-body table tr:nth-child(2n) {
+      background-color: #f6f8fa !important;
     }
     .markdown-body table td, .markdown-body table th {
-      border: 1px solid #30363d !important;
+      border: 1px solid #d0d7de !important;
       padding: 12px 14px !important;
-    }
-    .theme-toggle-btn {
-      background: #21262d;
-      border: 1px solid #363b42;
-      color: #c9d1d9;
-      padding: 4px 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 12px;
-    }
-    .theme-toggle-btn:hover {
-      background: #30363d;
     }
   </style>
 </head>
@@ -100,13 +93,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <div class="container">
     <div class="top-bar">
       <div>
-        <strong>Previewing:</strong> <code>AbhayDw / README.md</code>
+        <strong>Previewing Live:</strong> <code>AbhayDw / README.md</code>
       </div>
-      <div style="display: flex; gap: 12px; align-items: center;">
-        <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
-        <div class="badge-status">
-          <span class="status-dot"></span> Live Localhost Active
-        </div>
+      <div class="badge-status">
+        <span class="status-dot"></span> Clean Light Canvas Live (Port 8080)
       </div>
     </div>
     <div id="content" class="markdown-body">
@@ -115,27 +105,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
 
   <script>
-    let isDark = true;
-    function toggleTheme() {
-      isDark = !isDark;
-      const html = document.documentElement;
-      const container = document.querySelector('.container');
-      const body = document.body;
-      if (isDark) {
-        body.style.backgroundColor = '#0d1117';
-        container.style.backgroundColor = '#161b22';
-        container.style.borderColor = '#30363d';
-        html.setAttribute('data-color-mode', 'dark');
-        html.setAttribute('data-dark-theme', 'dark_dimmed');
-      } else {
-        body.style.backgroundColor = '#f6f8fa';
-        container.style.backgroundColor = '#ffffff';
-        container.style.borderColor = '#d0d7de';
-        html.setAttribute('data-color-mode', 'light');
-        html.setAttribute('data-light-theme', 'light');
-      }
-    }
-
     fetch('/README.md?t=' + Date.now())
       .then(response => response.text())
       .then(markdown => {
@@ -181,7 +150,7 @@ def run():
             continue
 
     print("=" * 65)
-    print(f"  ABHAY DWIVEDI — GITHUB PROFILE LOCAL PREVIEW SERVER")
+    print(f"  ABHAY DWIVEDI — PROFESSIONAL GITHUB PROFILE PREVIEW")
     print(f"  Live URL:   http://localhost:{port}")
     print(f"  Directory:  {DIRECTORY}")
     print("=" * 65)

@@ -1,20 +1,22 @@
 <div align="center">
 
-<img src="assets/profile-header.gif" alt="Abhay Dwivedi — Technology & Digital Solutions Professional" width="100%" />
+<img src="assets/profile-header.svg" alt="Abhay Dwivedi — Technology & Digital Solutions Professional" width="100%" />
 
 <br/><br/>
 
-<a href="https://abhay-portfolio-pi-tan.vercel.app/"><img src="https://img.shields.io/badge/Portfolio_Website-161B22?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+<a href="https://abhay-portfolio-pi-tan.vercel.app/"><img src="https://img.shields.io/badge/Interactive_Portfolio-00F0FF?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio" /></a>
 &nbsp;
-<a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 &nbsp;
-<a href="https://github.com/AbhayDw"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://github.com/AbhayDw"><img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 &nbsp;
-<a href="mailto:dwivediabhay727@gmail.com"><img src="https://img.shields.io/badge/Direct_Email-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
+<a href="mailto:abhaydwivedi3375@gmail.com"><img src="https://img.shields.io/badge/Direct_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 <br/><br/>
 
-<code>📍 Bhopal, Madhya Pradesh, India</code>
+```text
+📍 Bhopal, Madhya Pradesh, India  •  🌐 Technology & Digital Solutions Professional
+```
 
 </div>
 
@@ -66,19 +68,20 @@ Over the past several years, my work has centered on bridging the gap between te
 ### 💼 Professional Experience
 
 * **Client Coordinator & Technical Trainer — SCMS Project**  
-  **Madhya Pradesh Higher Education Department** &nbsp;·&nbsp; *2024 – Present*  
-  Coordinated software deployment and data validation across 67+ PMCOE and autonomous colleges. Led faculty training workshops, system demonstrations, and structured UAT cycles while facilitating inter-departmental communication between academic leadership and engineering teams.
+  **Madhya Pradesh Higher Education Department** &nbsp;·&nbsp; *Jul 2026 – Present*  
+  Coordinated software deployment and data validation across 67+ PMCOE and autonomous colleges. Led faculty training workshops, system demonstrations, and structured UAT cycles while facilitating inter-departmental communication between academic leadership and engineering teams.  
+  *Note: Delivered technical training sessions at **Sarojini Naidu Government Girls' College, Bhopal** during Sep–Oct 2026.*
 
 * **Software Intern**  
-  **CONORG India** &nbsp;·&nbsp; *2024*  
+  **CONORG India** &nbsp;·&nbsp; *Jun 2026 – Present*  
   Contributed to software implementation, core feature development, quality assurance testing, and functional documentation.
 
 * **Python Development Intern**  
-  **Codrat Tech Pvt. Ltd.** &nbsp;·&nbsp; *2023 – 2024*  
+  **Codrat Tech Pvt. Ltd.** &nbsp;·&nbsp; *Jan – Mar 2026*  
   Developed automated backend scripts and data processing utilities using Python. Conducted exploratory data analysis (EDA), code optimization, and unit testing routines.
 
 * **Discipline Club Coordinator**  
-  **Apna SAC** &nbsp;·&nbsp; *2023 – 2024*  
+  **Apna SAC** &nbsp;·&nbsp; *Sep 2024 – Dec 2025*  
   Managed student operations and event coordination across 25+ institutional college events. Recognized with the Best Event Management Award.
 
 ---
@@ -100,26 +103,26 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### 🛠️ Technical Expertise
+### 🛠️ Technical Stack & Toolchain
 
-| Category | Specialized Toolchain & Applied Competencies | Official Icons |
+| Category | Specialized Toolchain & Applied Competencies | Authentic Icons |
 | :--- | :--- | :---: |
-| **Programming & Querying** | `Python`, `SQL` | <img src="https://skillicons.dev/icons?i=py,mysql,postgres" height="26" alt="Programming Icons" /> |
-| **Data Science & Analysis** | `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, Exploratory Data Analysis (EDA) | <img src="https://skillicons.dev/icons?i=pandas,numpy,sklearn" height="26" alt="Data Science Icons" /> |
-| **Machine Learning** | `Scikit-learn`, Linear & Logistic Regression, Multi-class Classification, Feature Engineering, Model Evaluation | <img src="https://skillicons.dev/icons?i=sklearn,py" height="26" alt="Machine Learning Icons" /> |
-| **Artificial Intelligence** | `Generative AI`, `Natural Language Processing (NLP)`, `LangChain`, `Retrieval-Augmented Generation (RAG)` | <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" height="20" /> &nbsp; <img src="https://img.shields.io/badge/Gemini_AI-1A73E8?style=flat-square&logo=google&logoColor=white" height="20" /> |
-| **Databases** | `PostgreSQL`, `MySQL` | <img src="https://skillicons.dev/icons?i=postgres,mysql" height="26" alt="Database Icons" /> |
-| **Analytics & Reporting** | `Power BI`, `Microsoft Excel (Advanced Data Modeling)` | <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" height="20" /> &nbsp; <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" height="20" /> |
-| **Tools & Workflow** | `Git`, `GitHub`, `GitHub Actions (CI/CD)`, `VS Code`, `Jupyter Notebook` | <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode" height="26" alt="Tools Icons" /> |
+| **Programming & Querying** | `Python`, `SQL` | <img src="https://skillicons.dev/icons?i=py,mysql,postgres" height="28" alt="Programming Icons" /> |
+| **Data Science & Analysis** | `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, Exploratory Data Analysis (EDA) | <img src="https://skillicons.dev/icons?i=pandas,numpy,sklearn" height="28" alt="Data Science Icons" /> |
+| **Machine Learning** | `Scikit-learn`, Linear & Logistic Regression, Multi-class Classification, Feature Engineering, Model Evaluation | <img src="https://skillicons.dev/icons?i=sklearn,py" height="28" alt="Machine Learning Icons" /> |
+| **Artificial Intelligence** | `Generative AI`, `Natural Language Processing (NLP)`, `LangChain`, `Retrieval-Augmented Generation (RAG)` | <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" height="22" /> &nbsp; <img src="https://img.shields.io/badge/Gemini_AI-1A73E8?style=flat-square&logo=google&logoColor=white" height="22" /> |
+| **Databases** | `PostgreSQL`, `MySQL` | <img src="https://skillicons.dev/icons?i=postgres,mysql" height="28" alt="Database Icons" /> |
+| **Analytics & Reporting** | `Power BI`, `Microsoft Excel (Advanced Data Modeling)` | <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" height="22" /> &nbsp; <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" height="22" /> |
+| **Tools & Workflow** | `Git`, `GitHub`, `GitHub Actions (CI/CD)`, `VS Code`, `Jupyter Notebook` | <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode" height="28" alt="Tools Icons" /> |
 
 ---
 
-### 📊 GitHub Activity & Statistics
+### 📊 GitHub Activity & Insights
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=F59E0B&text_color=94A3B8" alt="GitHub Stats" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&theme=default&hide_border=false&border_color=E2E8F0&title_color=2563EB&icon_color=F97316&text_color=334155&bg_color=FFFFFF" alt="GitHub Stats" height="155" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=94A3B8" alt="Top Languages" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&theme=default&hide_border=false&border_color=E2E8F0&title_color=2563EB&text_color=334155&bg_color=FFFFFF" alt="Top Languages" height="155" />
 </div>
 
 ---
@@ -145,7 +148,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 Feel free to connect regarding **government digital initiatives, software delivery, technical training programs, or applied AI/data solutions**:
 
-* **Email:** [dwivediabhay727@gmail.com](mailto:dwivediabhay727@gmail.com)
+* **Email:** [abhaydwivedi3375@gmail.com](mailto:abhaydwivedi3375@gmail.com)
 * **LinkedIn:** [linkedin.com/in/abhay-dwivedi-6a8aa4279](https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/)
 * **Portfolio:** [abhay-portfolio-pi-tan.vercel.app](https://abhay-portfolio-pi-tan.vercel.app/)
 * **GitHub:** [github.com/AbhayDw](https://github.com/AbhayDw)
