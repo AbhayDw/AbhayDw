@@ -1,186 +1,117 @@
-<svg width="100%" height="280" viewBox="0 0 960 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="320" viewBox="0 0 960 320" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Vibrant Animated Gradients -->
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2563EB">
-        <animate attributeName="stop-color" values="#2563EB;#7C3AED;#EA580C;#2563EB" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#7C3AED">
-        <animate attributeName="stop-color" values="#7C3AED;#EA580C;#2563EB;#7C3AED" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#EA580C">
-        <animate attributeName="stop-color" values="#EA580C;#2563EB;#7C3AED;#EA580C" dur="6s" repeatCount="indefinite" />
-      </stop>
+    <!-- Background and Atmospheric Glow -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A0D14" />
+      <stop offset="45%" stop-color="#141C2E" />
+      <stop offset="55%" stop-color="#141C2E" />
+      <stop offset="100%" stop-color="#0A0D14" />
     </linearGradient>
 
-    <!-- Ambient Colorful Mesh Blobs -->
-    <radialGradient id="meshBlue" cx="15%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#DBEAFE" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#DBEAFE" stop-opacity="0" />
-    </radialGradient>
-
-    <radialGradient id="meshPurple" cx="85%" cy="20%" r="50%">
-      <stop offset="0%" stop-color="#F3E8FF" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#F3E8FF" stop-opacity="0" />
-    </radialGradient>
-
-    <radialGradient id="meshAmber" cx="80%" cy="85%" r="45%">
-      <stop offset="0%" stop-color="#FFEDD5" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#FFEDD5" stop-opacity="0" />
-    </radialGradient>
-
-    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#2563EB" flood-opacity="0.15" />
-    </filter>
+    <!-- Traveling Horizon Amber Flare -->
+    <linearGradient id="horizonFlare" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0" />
+      <stop offset="40%" stop-color="#F59E0B" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FDE68A" stop-opacity="1" />
+      <stop offset="60%" stop-color="#F59E0B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
+    </linearGradient>
 
     <style>
-      .title-text {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-        font-size: 50px;
-        font-weight: 850;
-        letter-spacing: -0.5px;
-      }
-      .subtitle-text {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        fill: #334155;
-      }
-      .tagline-text {
-        font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
-        font-size: 12px;
+      .hero-title {
+        font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 46px;
         font-weight: 700;
-        letter-spacing: 1.5px;
-        fill: #2563EB;
+        fill: #F8FAFC;
+        letter-spacing: 0.5px;
       }
-      .badge-text {
+      .role-sub {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 600;
-        fill: #1E293B;
+        fill: #FDE68A;
+      }
+      .kicker-text {
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-size: 11px;
+        font-weight: 700;
+        fill: #F59E0B;
+        letter-spacing: 1px;
       }
       .meta-text {
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-size: 10px;
+        fill: #94A3B8;
+      }
+      .panel-title {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 13px;
-        font-weight: 500;
-        fill: #64748B;
+        font-size: 11px;
+        font-weight: 700;
+        fill: #F8FAFC;
       }
-
-      @keyframes floatA {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-6px); }
+      .panel-sub {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 9.5px;
+        fill: #94A3B8;
       }
-      @keyframes floatB {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-8px); }
-      }
-      @keyframes pulseBeacon {
-        0%, 100% { transform: scale(1); opacity: 1; }
-        50% { transform: scale(1.4); opacity: 0.6; }
-      }
-      @keyframes orbitRotate {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-
-      .floating-a { animation: floatA 4s ease-in-out infinite; }
-      .floating-b { animation: floatB 5s ease-in-out infinite; }
-      .beacon-dot { transform-origin: 520px 242px; animation: pulseBeacon 2s ease-in-out infinite; }
-      .orbital-ring { transform-origin: 855px 125px; animation: orbitRotate 20s linear infinite; }
     </style>
   </defs>
 
-  <!-- Clean, Bright Pearl Canvas with Subtle Shadow and Border -->
-  <rect x="2" y="2" width="956" height="276" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+  <!-- Background -->
+  <rect width="960" height="320" rx="12" fill="url(#bgGrad)" />
+  <rect x="14" y="14" width="932" height="292" rx="10" stroke="#28344B" stroke-width="1.5" />
 
-  <!-- Ambient Light Mesh Background -->
-  <rect x="3" y="3" width="954" height="274" rx="17" fill="url(#meshBlue)" />
-  <rect x="3" y="3" width="954" height="274" rx="17" fill="url(#meshPurple)" />
-  <rect x="3" y="3" width="954" height="274" rx="17" fill="url(#meshAmber)" />
+  <!-- Corner Gold Ticks -->
+  <path d="M14 24 V14 H24" stroke="#F59E0B" stroke-width="2" />
+  <path d="M946 24 V14 H936" stroke="#F59E0B" stroke-width="2" />
+  <path d="M14 296 V306 H24" stroke="#F59E0B" stroke-width="2" />
+  <path d="M946 296 V306 H936" stroke="#F59E0B" stroke-width="2" />
 
-  <!-- Architectural Corner Ticks -->
-  <path d="M 18 34 L 18 18 L 34 18" stroke="#2563EB" stroke-width="3" stroke-linecap="round" fill="none" />
-  <path d="M 942 34 L 942 18 L 926 18" stroke="#EA580C" stroke-width="3" stroke-linecap="round" fill="none" />
-  <path d="M 18 246 L 18 262 L 34 262" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none" />
-  <path d="M 942 246 L 942 262 L 926 262" stroke="#2563EB" stroke-width="3" stroke-linecap="round" fill="none" />
+  <!-- Top Metadata Bar -->
+  <text x="40" y="38" class="kicker-text">PORTFOLIO &amp; PROFESSIONAL PROFILE</text>
+  <text x="920" y="38" text-anchor="end" class="meta-text">BHOPAL, MP, INDIA [23.2599° N, 77.4126° E]</text>
 
-  <!-- Main Identity (Left Panel) -->
-  <g transform="translate(44, 34)">
-    <!-- Top Monospace Kicker Pill -->
-    <rect x="0" y="0" width="375" height="28" rx="7" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
-    <circle cx="14" cy="14" r="4.5" fill="#2563EB" />
-    <text x="26" y="18" class="tagline-text">TECHNOLOGY &amp; DIGITAL SOLUTIONS</text>
+  <!-- Hero Name -->
+  <text x="40" y="86" class="hero-title">ABHAY DWIVEDI</text>
+  <text x="42" y="115" class="role-sub">Technology &amp; Digital Solutions Professional</text>
 
-    <!-- Main Name with Living Dynamic Gradient -->
-    <text x="0" y="70" class="title-text" fill="url(#titleGrad)" filter="url(#softGlow)">Abhay Dwivedi</text>
+  <!-- Horizon Line -->
+  <line x1="40" y1="145" x2="920" y2="145" stroke="#32415A" stroke-width="1.5" />
+  <line x1="180" y1="145" x2="480" y2="145" stroke="url(#horizonFlare)" stroke-width="3">
+    <animate attributeName="x1" values="40;620;40" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="340;920;340" dur="8s" repeatCount="indefinite" />
+  </line>
 
-    <!-- Subtitle Role -->
-    <text x="2" y="106" class="subtitle-text">State Initiatives &bull; Software Delivery &bull; Applied AI &bull; Client Coordination</text>
+  <!-- Four Institutional Panels -->
+  <!-- Panel 1 -->
+  <rect x="40" y="165" width="205" height="82" rx="6" fill="#101622" stroke="#28344B" stroke-width="1" />
+  <rect x="50" y="174" width="22" height="12" rx="2" fill="#231E19" stroke="#F59E0B" stroke-width="0.8" />
+  <text x="54" y="183" font-family="monospace" font-size="8" fill="#F59E0B" font-weight="700">01</text>
+  <text x="50" y="202" class="panel-title">GOVERNMENT INITIATIVES</text>
+  <text x="50" y="222" class="panel-sub">e-Setu • Agriculture Platforms</text>
 
-    <!-- 4 Interactive-Feeling Pill Cards with Colorful Indicator Jewels -->
-    <g transform="translate(0, 126)">
-      <!-- Pill 1 -->
-      <g class="floating-a">
-        <rect x="0" y="0" width="200" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
-        <circle cx="16" cy="17" r="5" fill="#2563EB" />
-        <text x="30" y="22" class="badge-text">Government Platforms</text>
-      </g>
+  <!-- Panel 2 -->
+  <rect x="265" y="165" width="205" height="82" rx="6" fill="#101622" stroke="#28344B" stroke-width="1" />
+  <rect x="275" y="174" width="22" height="12" rx="2" fill="#231E19" stroke="#F59E0B" stroke-width="0.8" />
+  <text x="279" y="183" font-family="monospace" font-size="8" fill="#F59E0B" font-weight="700">02</text>
+  <text x="275" y="202" class="panel-title">SOFTWARE IMPLEMENTATION</text>
+  <text x="275" y="222" class="panel-sub">SCMS • 67+ PMCOE Colleges • UAT</text>
 
-      <!-- Pill 2 -->
-      <g transform="translate(210, 0)" class="floating-b">
-        <rect x="0" y="0" width="190" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
-        <circle cx="16" cy="17" r="5" fill="#EA580C" />
-        <text x="30" y="22" class="badge-text">Implementation &amp; UAT</text>
-      </g>
+  <!-- Panel 3 -->
+  <rect x="490" y="165" width="205" height="82" rx="6" fill="#101622" stroke="#28344B" stroke-width="1" />
+  <rect x="500" y="174" width="22" height="12" rx="2" fill="#231E19" stroke="#F59E0B" stroke-width="0.8" />
+  <text x="504" y="183" font-family="monospace" font-size="8" fill="#F59E0B" font-weight="700">03</text>
+  <text x="500" y="202" class="panel-title">AI &amp; MACHINE LEARNING</text>
+  <text x="500" y="222" class="panel-sub">Predictive Analytics • Models</text>
 
-      <!-- Pill 3 -->
-      <g transform="translate(410, 0)" class="floating-a">
-        <rect x="0" y="0" width="180" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
-        <circle cx="16" cy="17" r="5" fill="#7C3AED" />
-        <text x="30" y="22" class="badge-text">Applied AI &amp; Data</text>
-      </g>
+  <!-- Panel 4 -->
+  <rect x="715" y="165" width="205" height="82" rx="6" fill="#101622" stroke="#28344B" stroke-width="1" />
+  <rect x="725" y="174" width="22" height="12" rx="2" fill="#231E19" stroke="#F59E0B" stroke-width="0.8" />
+  <text x="729" y="183" font-family="monospace" font-size="8" fill="#F59E0B" font-weight="700">04</text>
+  <text x="725" y="202" class="panel-title">STAKEHOLDER LEADERSHIP</text>
+  <text x="725" y="222" class="panel-sub">Client Coordination • Training</text>
 
-      <!-- Pill 4 -->
-      <g transform="translate(600, 0)" class="floating-b">
-        <rect x="0" y="0" width="190" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
-        <circle cx="16" cy="17" r="5" fill="#10B981" />
-        <text x="30" y="22" class="badge-text">Client Coordination</text>
-      </g>
-    </g>
-
-    <!-- Bottom Meta & Live Status Bar -->
-    <g transform="translate(2, 186)">
-      <text x="0" y="14" class="meta-text">📍 Bhopal, Madhya Pradesh, India</text>
-      <text x="220" y="14" class="meta-text">&bull;</text>
-      <text x="236" y="14" class="meta-text">🏛️ 67+ PMCOE Colleges &bull; SCMS &bull; e-Setu</text>
-      <text x="495" y="14" class="meta-text">&bull;</text>
-      <circle cx="510" cy="10" r="4.5" fill="#10B981" class="beacon-dot" />
-      <text x="522" y="14" class="meta-text" fill="#059669" font-weight="600">Available for Deployments &amp; Strategy</text>
-    </g>
-  </g>
-
-  <!-- Right: Dynamic Tech Ecosystem Satellite Nexus -->
-  <g transform="translate(855, 125)">
-    <!-- Rotating Orbital Dash Ring -->
-    <circle cx="0" cy="0" r="68" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 5" class="orbital-ring" />
-    <circle cx="0" cy="0" r="44" stroke="#DBEAFE" stroke-width="1.5" />
-
-    <!-- Center Solutions Core -->
-    <circle cx="0" cy="0" r="26" fill="#EFF6FF" stroke="#2563EB" stroke-width="2" />
-    <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#2563EB">SOLUTIONS</text>
-
-    <!-- Orbiting Tech Satellites -->
-    <g class="floating-a">
-      <circle cx="-58" cy="-30" r="15" fill="#FFFFFF" stroke="#38BDF8" stroke-width="2" />
-      <text x="-58" y="-26" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="800" fill="#0284C7">AI</text>
-    </g>
-    <g class="floating-b">
-      <circle cx="58" cy="-30" r="15" fill="#FFFFFF" stroke="#F97316" stroke-width="2" />
-      <text x="58" y="-26" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="800" fill="#EA580C">ML</text>
-    </g>
-    <g class="floating-a">
-      <circle cx="0" cy="62" r="15" fill="#FFFFFF" stroke="#10B981" stroke-width="2" />
-      <text x="0" y="66" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="800" fill="#059669">OPS</text>
-    </g>
-  </g>
+  <!-- Footer -->
+  <text x="40" y="282" class="meta-text">SCALE: ENTERPRISE &amp; PUBLIC SECTOR DIGITAL TRANSFORMATION</text>
+  <text x="920" y="282" text-anchor="end" class="meta-text">CINEMATIC IDENTITY // 2026</text>
 </svg>

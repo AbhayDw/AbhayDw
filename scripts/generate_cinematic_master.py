@@ -187,3 +187,4 @@ def create_cinematic_master(output_path, num_frames=36):
 if __name__ == "__main__":
     out_gif = r"C:\GitHub\AbhayDw\assets\profile-header.gif"
     create_cinematic_master(out_gif)
+

@@ -1,28 +1,22 @@
 <div align="center">
 
-<img src="assets/profile-header.svg" alt="Abhay Dwivedi — Technology & Digital Solutions Professional" width="100%" />
+<img src="assets/profile-header.gif" alt="Abhay Dwivedi — Technology & Digital Solutions Professional" width="100%" />
 
 <br/><br/>
 
-<a href="https://abhay-portfolio-pi-tan.vercel.app/"><img src="https://img.shields.io/badge/Interactive_Portfolio-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-&nbsp;&nbsp;
-<a href="https://github.com/AbhayDw"><img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-&nbsp;&nbsp;
-<a href="mailto:abhaydwivedi3375@gmail.com"><img src="https://img.shields.io/badge/Direct_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-
-<br/><br/>
-
-```text
-📍 Bhopal, Madhya Pradesh, India  •  🌐 Technology & Digital Solutions Professional
-```
+<p align="center">
+  <a href="https://abhay-portfolio-pi-tan.vercel.app/"><strong>Portfolio Website ↗</strong></a> &nbsp;&bull;&nbsp;
+  <a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><strong>LinkedIn ↗</strong></a> &nbsp;&bull;&nbsp;
+  <a href="https://github.com/AbhayDw"><strong>GitHub ↗</strong></a> &nbsp;&bull;&nbsp;
+  <a href="mailto:dwivediabhay727@gmail.com"><strong>Direct Email ↗</strong></a> &nbsp;&bull;&nbsp;
+  <span>📍 <strong>Bhopal, Madhya Pradesh, India</strong></span>
+</p>
 
 </div>
 
 ---
 
-### 📌 About Me
+### About Me
 
 I am a **Technology & Digital Solutions Professional** working across state-level government digital initiatives, software delivery, multi-tier stakeholder coordination, and applied AI/data systems.
 
@@ -30,7 +24,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### 🎯 Focus Areas
+### Focus Areas
 
 * **Government Digital Transformation**  
   Deploying regional public-sector software systems across administrative bodies. Translating government directives into functional system workflows, ensuring audit readiness, and delivering dependable public-facing services.
@@ -43,7 +37,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### 🏛️ Government & Institutional Project Contributions
+### Government & Institutional Project Contributions
 
 *The following represent targeted project contributions and coordination mandates delivered for state initiatives and public departments, distinct from direct civil-service employment:*
 
@@ -65,7 +59,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### 💼 Professional Experience
+### Professional Experience
 
 * **Client Coordinator & Technical Trainer — SCMS Project**  
   **Madhya Pradesh Higher Education Department** &nbsp;·&nbsp; *Jul 2026 – Present*  
@@ -86,7 +80,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### 🚀 Selected Projects
+### Selected Projects
 
 <!-- START_SECTION:PROJECTS -->
 | Project | Focus & Technical Overview | Stack & Links |
@@ -103,7 +97,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### 🛠️ Technical Stack & Toolchain
+### Technical Stack & Toolchain
 
 | Category | Specialized Toolchain & Applied Competencies | Authentic Icons |
 | :--- | :--- | :---: |
@@ -117,17 +111,17 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### 📊 GitHub Activity & Insights
+### GitHub Activity & Insights
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&theme=default&hide_border=false&border_color=E2E8F0&title_color=2563EB&icon_color=EA580C&text_color=334155&bg_color=FFFFFF" alt="GitHub Stats" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&hide_border=false&border_color=28344B&title_color=F59E0B&icon_color=FDE68A&text_color=94A3B8&bg_color=0A0D14" alt="GitHub Stats" height="155" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&theme=default&hide_border=false&border_color=E2E8F0&title_color=2563EB&text_color=334155&bg_color=FFFFFF" alt="Top Languages" height="155" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&hide_border=false&border_color=28344B&title_color=F59E0B&text_color=94A3B8&bg_color=0A0D14" alt="Top Languages" height="155" />
 </div>
 
 ---
 
-### 🏆 Certifications & Achievements
+### Certifications & Achievements
 
 #### Certifications
 * **Oracle Agentic AI Certified Foundations Associate** — Oracle
@@ -144,11 +138,11 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### 📬 Contact
+### Contact
 
 Feel free to connect regarding **government digital initiatives, software delivery, technical training programs, or applied AI/data solutions**:
 
-* **Email:** [abhaydwivedi3375@gmail.com](mailto:abhaydwivedi3375@gmail.com)
+* **Email:** [dwivediabhay727@gmail.com](mailto:dwivediabhay727@gmail.com)
 * **LinkedIn:** [linkedin.com/in/abhay-dwivedi-6a8aa4279](https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/)
 * **Portfolio:** [abhay-portfolio-pi-tan.vercel.app](https://abhay-portfolio-pi-tan.vercel.app/)
 * **GitHub:** [github.com/AbhayDw](https://github.com/AbhayDw)

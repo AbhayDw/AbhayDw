@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhay Dwivedi — Cinematic Visual Directions Review</title>
+  <title>Abhay Dwivedi — Header Visual Concepts Review</title>
   <style>
     :root {
-      --bg: #F8FAFC;
-      --card-bg: #FFFFFF;
-      --border: #E2E8F0;
-      --text-main: #0F172A;
-      --text-muted: #64748B;
-      --blue: #2563EB;
-      --orange: #EA580C;
+      --bg: #0B0F17;
+      --card-bg: #111722;
+      --border: #1E293B;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+      --cyan: #00F0FF;
+      --blue: #38BDF8;
+      --amber: #F59E0B;
+      --emerald: #10B981;
     }
     body {
       margin: 0;
-      padding: 40px 20px;
+      padding: 40px 24px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background-color: var(--bg);
       color: var(--text-main);
@@ -24,35 +26,36 @@
     }
     .header-box {
       max-width: 1040px;
-      margin: 0 auto 40px auto;
+      margin: 0 auto 50px auto;
       text-align: center;
     }
     h1 {
-      font-size: 34px;
-      font-weight: 850;
+      font-size: 36px;
+      font-weight: 800;
       margin-bottom: 8px;
+      letter-spacing: -0.5px;
       color: var(--text-main);
     }
     .kicker {
-      font-family: monospace;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 13px;
       font-weight: 700;
-      color: var(--blue);
-      letter-spacing: 1px;
+      color: var(--cyan);
+      letter-spacing: 1.5px;
     }
     .container {
       max-width: 1040px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 60px;
+      gap: 70px;
     }
     .concept-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 32px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
     }
     .concept-title {
       display: flex;
@@ -60,21 +63,22 @@
       align-items: baseline;
       margin-bottom: 16px;
       border-bottom: 1px solid var(--border);
-      padding-bottom: 12px;
+      padding-bottom: 16px;
     }
     .concept-title h2 {
       margin: 0;
-      font-size: 24px;
+      font-size: 26px;
       color: var(--text-main);
     }
     .concept-tag {
       font-family: monospace;
       font-size: 12px;
       font-weight: 700;
-      background: #EFF6FF;
-      color: var(--blue);
-      padding: 4px 10px;
-      border-radius: 6px;
+      background: rgba(0, 240, 255, 0.1);
+      color: var(--cyan);
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 240, 255, 0.25);
     }
     .concept-desc {
       font-size: 15px;
@@ -84,17 +88,18 @@
     .preview-img {
       width: 100%;
       height: auto;
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid var(--border);
       display: block;
-      margin-bottom: 20px;
-      background: #FFF;
+      margin: 16px 0 24px 0;
+      background: #000;
     }
     .keyframe-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
-      margin-top: 16px;
+      margin-top: 14px;
+      margin-bottom: 30px;
     }
     .keyframe-cell {
       text-align: center;
@@ -102,7 +107,7 @@
     .keyframe-cell img {
       width: 100%;
       height: auto;
-      border-radius: 6px;
+      border-radius: 8px;
       border: 1px solid var(--border);
     }
     .keyframe-label {
@@ -110,157 +115,233 @@
       font-family: monospace;
       font-weight: 600;
       color: var(--text-muted);
-      margin-top: 6px;
+      margin-top: 8px;
+    }
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .spec-item h4 {
+      margin: 0 0 6px 0;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+    .spec-item p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .palette-chips {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .chip {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.2);
     }
     .recommendation-badge {
       display: inline-block;
-      background: #FEF3C7;
-      color: #92400E;
+      background: rgba(245, 158, 11, 0.15);
+      color: #FBBF24;
+      border: 1px solid rgba(245, 158, 11, 0.4);
       font-weight: 700;
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 20px;
       font-size: 12px;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      font-family: monospace;
     }
   </style>
 </head>
 <body>
 
   <div class="header-box">
-    <div class="kicker">CREATIVE DIRECTION &bull; CINEMATIC VISUAL IDENTITIES</div>
-    <h1>Abhay Dwivedi — Visual Concepts Review</h1>
-    <p style="color: #64748B; max-width: 680px; margin: 0 auto;">
-      Four distinct cinematic art directions developed to represent the full professional identity of Abhay Dwivedi without AI/ML templates or generic developer widgets.
+    <div class="kicker">CREATIVE DIRECTION &bull; HEADER IDENTITY CONCEPTS</div>
+    <h1>Abhay Dwivedi — Cinematic Header Concepts</h1>
+    <p style="color: #94A3B8; max-width: 720px; margin: 0 auto; font-size: 16px;">
+      Three bespoke, high-DPI header identity directions created specifically for your profile. Each concept incorporates the locked professional content, precise typography, and restrained motion graphics without generic AI/dashboard templates.
     </p>
   </div>
 
   <div class="container">
 
-    <!-- CONCEPT A -->
-    <div class="concept-card">
+    <!-- CONCEPT 1 -->
+    <div class="concept-card" style="border: 1px solid #00F0FF; box-shadow: 0 0 25px rgba(0,240,255,0.12);">
       <div class="concept-title">
-        <h2>Concept A: Editorial Cinema (The Monograph Title Sequence)</h2>
-        <span class="concept-tag">DIRECTION 01</span>
+        <h2>Concept 1: Deep Midnight Minimalist</h2>
+        <span class="concept-tag">CONCEPT 01</span>
       </div>
       <p class="concept-desc">
-        <strong>Inspiration:</strong> Auteur film title sequences, criterion monograph covers, fine editorial publication typography.<br/>
-        <strong>Visual Tone:</strong> Warm archival bone, deep sumi-e carbon ink typography, vermilion seal stamp, and precision corner registration marks.<br/>
-        <strong>Idea:</strong> Presents your name as the central hero in an expansive, elegant serif title reveal, communicating authority, taste, and executive governance experience.
+        <strong>Visual Narrative:</strong> Ultra-clean, architectural typography with razor-sharp precision linework and a restrained electric cyan accent. Conveys calm authority, modern systems thinking, and technical sophistication.
       </p>
-      
-      <strong>Live Animated Motion Preview:</strong>
-      <img src="concept_a.gif" class="preview-img" alt="Concept A Motion" />
+
+      <strong>Live Animated Motion (Looped GIF):</strong>
+      <img src="concept_1.gif" class="preview-img" alt="Concept 1 Motion Preview" />
 
       <strong>Keyframe Sequence (Opening &rarr; Middle &rarr; Ending):</strong>
       <div class="keyframe-grid">
         <div class="keyframe-cell">
-          <img src="concept_a_opening.png" alt="Opening Frame" />
-          <div class="keyframe-label">Frame 01: Initial Reveal &amp; Extension</div>
+          <img src="concept_1_opening.png" alt="Concept 1 Opening" />
+          <div class="keyframe-label">Frame 01: Perimeter Corner Locks &amp; Location</div>
         </div>
         <div class="keyframe-cell">
-          <img src="concept_a_middle.png" alt="Middle Frame" />
-          <div class="keyframe-label">Frame 12: Rule Progression &amp; Seal Imprint</div>
+          <img src="concept_1_middle.png" alt="Concept 1 Middle" />
+          <div class="keyframe-label">Frame 14: Traveling Cyan Focus Beam</div>
         </div>
         <div class="keyframe-cell">
-          <img src="concept_a_ending.png" alt="Ending Frame" />
-          <div class="keyframe-label">Frame 24: Resolved Monograph Identity</div>
+          <img src="concept_1_ending.png" alt="Concept 1 Ending" />
+          <div class="keyframe-label">Frame 28: Resolved Four Domain Structure</div>
+        </div>
+      </div>
+
+      <div class="spec-grid">
+        <div class="spec-item">
+          <h4>Color Palette</h4>
+          <p>Midnight Charcoal, Off-White, Electric Cyan</p>
+          <div class="palette-chips">
+            <div class="chip" style="background: #0F141C;" title="#0F141C Deep Midnight"></div>
+            <div class="chip" style="background: #151C26;" title="#151C26 Card Background"></div>
+            <div class="chip" style="background: #F0F6FC;" title="#F0F6FC Pure Off-White"></div>
+            <div class="chip" style="background: #8B949E;" title="#8B949E Muted Slate"></div>
+            <div class="chip" style="background: #00F0FF;" title="#00F0FF Electric Cyan"></div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <h4>Typography</h4>
+          <p><strong>Hero:</strong> Bahnschrift Bold Condensed<br/><strong>Subtitle:</strong> Segoe UI Semibold<br/><strong>Meta:</strong> Consolas Technical</p>
+        </div>
+        <div class="spec-item">
+          <h4>Motion Dynamics</h4>
+          <p>Pulsing live status indicator (Bhopal, MP), smooth traveling laser-accent across dividing hairline, steady 60fps breathing loop.</p>
+        </div>
+        <div class="spec-item">
+          <h4>Why It Fits</h4>
+          <p>Presents your multi-tier experience (e-Setu, SCMS 67+ PMCOE, Applied AI) with pristine clarity, zero clutter, and high executive confidence.</p>
         </div>
       </div>
     </div>
 
-    <!-- CONCEPT B -->
-    <div class="concept-card" style="border: 2px solid #2563EB;">
-      <span class="recommendation-badge">&star; CREATIVE DIRECTOR'S TOP RECOMMENDATION</span>
+    <!-- CONCEPT 2 -->
+    <div class="concept-card" style="border: 1px solid #F59E0B; box-shadow: 0 0 25px rgba(245,158,11,0.12);">
+      <span class="recommendation-badge">&star; CINEMATIC WARMTH &bull; HERO HORIZON</span>
       <div class="concept-title">
-        <h2>Concept B: Visual Storytelling (The Blueprint &amp; The Spectrum)</h2>
-        <span class="concept-tag">DIRECTION 02 &bull; RECOMMENDED</span>
+        <h2>Concept 2: Cinematic Horizon</h2>
+        <span class="concept-tag" style="background: rgba(245,158,11,0.15); color: #F59E0B; border-color: rgba(245,158,11,0.3);">CONCEPT 02</span>
       </div>
       <p class="concept-desc">
-        <strong>Inspiration:</strong> The complete narrative journey from public-sector policy mandates (e-Setu, SCMS across 67+ PMCOE colleges) to technical implementation, UAT, and real-world human adoption.<br/>
-        <strong>Visual Tone:</strong> Architectural blueprint grid, deep Prussian navy, burnt terracotta saffron, and human-impact emerald.<br/>
-        <strong>Idea:</strong> Rather than a static title, an animated energy signal traverses four sequential milestones representing your multidisciplinary spectrum: State Initiatives &rarr; Institutional Rollout &rarr; Human Enablement &rarr; Applied AI Solutions.
+        <strong>Visual Narrative:</strong> Atmospheric dark void with an illuminated mid-plane horizon line, champagne gold typography, and warm radiant copper warmth paired with cool titanium slate.
       </p>
 
-      <strong>Live Animated Motion Preview:</strong>
-      <img src="concept_b.gif" class="preview-img" alt="Concept B Motion" />
+      <strong>Live Animated Motion (Looped GIF):</strong>
+      <img src="concept_2.gif" class="preview-img" alt="Concept 2 Motion Preview" />
 
       <strong>Keyframe Sequence (Opening &rarr; Middle &rarr; Ending):</strong>
       <div class="keyframe-grid">
         <div class="keyframe-cell">
-          <img src="concept_b_opening.png" alt="Opening Frame" />
-          <div class="keyframe-label">Frame 01: Policy Inception Stage</div>
+          <img src="concept_2_opening.png" alt="Concept 2 Opening" />
+          <div class="keyframe-label">Frame 01: Ambient Indigo Atmosphere</div>
         </div>
         <div class="keyframe-cell">
-          <img src="concept_b_middle.png" alt="Middle Frame" />
-          <div class="keyframe-label">Frame 12: Implementation &amp; UAT Node</div>
+          <img src="concept_2_middle.png" alt="Concept 2 Middle" />
+          <div class="keyframe-label">Frame 14: Radiant Copper Horizon Sweep</div>
         </div>
         <div class="keyframe-cell">
-          <img src="concept_b_ending.png" alt="Ending Frame" />
-          <div class="keyframe-label">Frame 24: Complete Multi-Tier Journey</div>
+          <img src="concept_2_ending.png" alt="Concept 2 Ending" />
+          <div class="keyframe-label">Frame 28: Champagne Anchored Identity</div>
+        </div>
+      </div>
+
+      <div class="spec-grid">
+        <div class="spec-item">
+          <h4>Color Palette</h4>
+          <p>Obsidian Void, Champagne Gold, Radiant Copper</p>
+          <div class="palette-chips">
+            <div class="chip" style="background: #0A0D14;" title="#0A0D14 Obsidian"></div>
+            <div class="chip" style="background: #141C2E;" title="#141C2E Indigo Atmosphere"></div>
+            <div class="chip" style="background: #F8FAFC;" title="#F8FAFC Alabaster"></div>
+            <div class="chip" style="background: #F59E0B;" title="#F59E0B Copper Flare"></div>
+            <div class="chip" style="background: #FDE68A;" title="#FDE68A Champagne Gold"></div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <h4>Typography</h4>
+          <p><strong>Hero:</strong> Bahnschrift Cinematic<br/><strong>Subtitle:</strong> Segoe UI Champagne Gold<br/><strong>Coordinates:</strong> Consolas</p>
+        </div>
+        <div class="spec-item">
+          <h4>Motion Dynamics</h4>
+          <p>Anamorphic horizon flare traveling across the mid-divider, subtle atmospheric breathing glow, and amber badge micro-pulses.</p>
+        </div>
+        <div class="spec-item">
+          <h4>Why It Fits</h4>
+          <p>Brings a cinematic prestige and human warmth to public-sector digital initiatives and real-world stakeholder training.</p>
         </div>
       </div>
     </div>
 
-    <!-- CONCEPT C -->
-    <div class="concept-card">
+    <!-- CONCEPT 3 -->
+    <div class="concept-card" style="border: 1px solid #2563EB; box-shadow: 0 0 25px rgba(37,99,235,0.12);">
       <div class="concept-title">
-        <h2>Concept C: Experimental Motion Design (The Kinetic Monolith)</h2>
-        <span class="concept-tag">DIRECTION 03</span>
+        <h2>Concept 3: Precision Systems Grid</h2>
+        <span class="concept-tag" style="background: rgba(37,99,235,0.15); color: #60A5FA; border-color: rgba(37,99,235,0.3);">CONCEPT 03</span>
       </div>
       <p class="concept-desc">
-        <strong>Inspiration:</strong> Swiss kinetic typography, brutalist clarity, and high-impact design agency identities.<br/>
-        <strong>Visual Tone:</strong> Stark contrast white-on-black with precision measurement ticks, cobalt blue flash, and amber accent flare.<br/>
-        <strong>Idea:</strong> Positions "ABHAY DWIVEDI" with bold architectural scale, using animated measurement scales and asymmetrical structural blocks for government systems and AI execution.
+        <strong>Visual Narrative:</strong> Technical elegance featuring subtle coordinate marks, structured data aesthetic, calibrated hairline grid, and restrained royal cobalt &amp; institutional emerald accents.
       </p>
 
-      <strong>Live Animated Motion Preview:</strong>
-      <img src="concept_c.gif" class="preview-img" alt="Concept C Motion" />
+      <strong>Live Animated Motion (Looped GIF):</strong>
+      <img src="concept_3.gif" class="preview-img" alt="Concept 3 Motion Preview" />
 
       <strong>Keyframe Sequence (Opening &rarr; Middle &rarr; Ending):</strong>
       <div class="keyframe-grid">
         <div class="keyframe-cell">
-          <img src="concept_c_opening.png" alt="Opening Frame" />
-          <div class="keyframe-label">Frame 01: Monolith Mask Reveal</div>
+          <img src="concept_3_opening.png" alt="Concept 3 Opening" />
+          <div class="keyframe-label">Frame 01: Coordinate Ticks &amp; Specification</div>
         </div>
         <div class="keyframe-cell">
-          <img src="concept_c_middle.png" alt="Middle Frame" />
-          <div class="keyframe-label">Frame 12: Anamorphic Light Projection</div>
+          <img src="concept_3_middle.png" alt="Concept 3 Middle" />
+          <div class="keyframe-label">Frame 14: Emerald Vertical Scan Pulse</div>
         </div>
         <div class="keyframe-cell">
-          <img src="concept_c_ending.png" alt="Ending Frame" />
-          <div class="keyframe-label">Frame 24: Fully Anchored Typography</div>
+          <img src="concept_3_ending.png" alt="Concept 3 Ending" />
+          <div class="keyframe-label">Frame 28: Structured Modules &amp; Delivery Status</div>
         </div>
       </div>
-    </div>
 
-    <!-- CONCEPT D -->
-    <div class="concept-card">
-      <div class="concept-title">
-        <h2>Concept D: Cinematic Digital World (Horizon Luminescence)</h2>
-        <span class="concept-tag">DIRECTION 04</span>
-      </div>
-      <p class="concept-desc">
-        <strong>Inspiration:</strong> Apple keynote cinematic title cards, modern tech studio horizon aesthetics, widescreen 2.39:1 framing.<br/>
-        <strong>Visual Tone:</strong> Titanium alabaster gradient, deep iris indigo, warm sunrise topaz horizon flare.<br/>
-        <strong>Idea:</strong> An anamorphic golden light flare travels across an expansive horizon dividing the brand identity above from the three institutional pillars below.
-      </p>
-
-      <strong>Live Animated Motion Preview:</strong>
-      <img src="concept_d.gif" class="preview-img" alt="Concept D Motion" />
-
-      <strong>Keyframe Sequence (Opening &rarr; Middle &rarr; Ending):</strong>
-      <div class="keyframe-grid">
-        <div class="keyframe-cell">
-          <img src="concept_d_opening.png" alt="Opening Frame" />
-          <div class="keyframe-label">Frame 01: Horizon Flare Origin</div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <h4>Color Palette</h4>
+          <p>Charcoal Slate, Royal Cobalt, Institutional Emerald</p>
+          <div class="palette-chips">
+            <div class="chip" style="background: #0D1117;" title="#0D1117 Dark Slate"></div>
+            <div class="chip" style="background: #161B22;" title="#161B22 Module Card"></div>
+            <div class="chip" style="background: #FFFFFF;" title="#FFFFFF Pure White"></div>
+            <div class="chip" style="background: #2563EB;" title="#2563EB Royal Cobalt"></div>
+            <div class="chip" style="background: #10B981;" title="#10B981 Institutional Emerald"></div>
+          </div>
         </div>
-        <div class="keyframe-cell">
-          <img src="concept_d_middle.png" alt="Middle Frame" />
-          <div class="keyframe-label">Frame 12: Apex Luminous Illumination</div>
+        <div class="spec-item">
+          <h4>Typography</h4>
+          <p><strong>Hero:</strong> Bahnschrift Monolithic<br/><strong>Subtitle:</strong> Segoe UI Cobalt<br/><strong>Data Chips:</strong> Consolas &amp; Segoe UI Semibold</p>
         </div>
-        <div class="keyframe-cell">
-          <img src="concept_d_ending.png" alt="Ending Frame" />
-          <div class="keyframe-label">Frame 24: Panoramic Balance</div>
+        <div class="spec-item">
+          <h4>Motion Dynamics</h4>
+          <p>Subtle vertical emerald scan pulse across the dividing axis, synchronized status blinkers across institutional modules.</p>
+        </div>
+        <div class="spec-item">
+          <h4>Why It Fits</h4>
+          <p>Directly highlights your institutional scale: 67+ PMCOE colleges, UAT verification, and end-to-end technical deployment.</p>
         </div>
       </div>
     </div>
@@ -269,4 +350,3 @@
 
 </body>
 </html>
-
