@@ -20,7 +20,7 @@
 
 I am a **Technology & Digital Solutions Professional** working across state-level government digital initiatives, software delivery, multi-tier stakeholder coordination, and applied AI/data systems.
 
-Over the past several years, my work has centered on bridging the gap between technical engineering groups, administrative leadership, and operational end users. Rather than viewing technology solely through code, I focus on the entire implementation lifecycle: translating policy mandates into structured technical requirements, managing User Acceptance Testing (UAT), training faculty and staff across regional institutions, and engineering practical machine learning models that support operational decision-making.
+ my work has centered on bridging the gap between technical engineering groups, administrative leadership, and operational end users. Rather than viewing technology solely through code, I focus on the entire implementation lifecycle: translating policy mandates into structured technical requirements, managing User Acceptance Testing (UAT), training faculty and staff across regional institutions, and engineering practical machine learning models that support operational decision-making.
 
 <img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
