@@ -110,15 +110,7 @@ I am a **Technology & Digital Solutions Professional** working across state-leve
 
 <img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
-### GitHub Activity & Insights
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&hide_border=false&border_color=303A49&title_color=D2AD68&icon_color=F59E0B&text_color=AAB3BF&bg_color=080D16" alt="GitHub Stats" height="155" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&hide_border=false&border_color=303A49&title_color=D2AD68&text_color=AAB3BF&bg_color=080D16" alt="Top Languages" height="155" />
-</div>
-
-<img src="assets/gold-divider.svg" width="100%" alt="Divider" />
 
 ### Certifications & Achievements
 
