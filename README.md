@@ -2,21 +2,25 @@
 
 <img src="assets/profile-header.gif" alt="Abhay Dwivedi — Technology & Digital Solutions Professional" width="100%" />
 
-<br/>
+<br/><br/>
 
-<p align="center">
-  <a href="https://abhay-portfolio-pi-tan.vercel.app/"><strong>Portfolio Website</strong> ↗</a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><strong>LinkedIn</strong> ↗</a> &nbsp;·&nbsp;
-  <a href="https://github.com/AbhayDw"><strong>GitHub</strong> ↗</a> &nbsp;·&nbsp;
-  <a href="mailto:dwivediabhay727@gmail.com"><strong>Email</strong> ↗</a> &nbsp;·&nbsp;
-  <span>📍 Bhopal, Madhya Pradesh, India</span>
-</p>
+<a href="https://abhay-portfolio-pi-tan.vercel.app/"><img src="https://img.shields.io/badge/Portfolio_Website-161B22?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+&nbsp;
+<a href="https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
+&nbsp;
+<a href="https://github.com/AbhayDw"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+&nbsp;
+<a href="mailto:dwivediabhay727@gmail.com"><img src="https://img.shields.io/badge/Direct_Email-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
+
+<br/><br/>
+
+<code>📍 Bhopal, Madhya Pradesh, India</code>
 
 </div>
 
 ---
 
-### About
+### 📌 About Me
 
 I am a **Technology & Digital Solutions Professional** working across state-level government digital initiatives, software delivery, multi-tier stakeholder coordination, and applied AI/data systems.
 
@@ -24,7 +28,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### Focus Areas
+### 🎯 Focus Areas
 
 * **Government Digital Transformation**  
   Deploying regional public-sector software systems across administrative bodies. Translating government directives into functional system workflows, ensuring audit readiness, and delivering dependable public-facing services.
@@ -37,7 +41,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### Government & Institutional Project Contributions
+### 🏛️ Government & Institutional Project Contributions
 
 *The following represent targeted project contributions and coordination mandates delivered for state initiatives and public departments, distinct from direct civil-service employment:*
 
@@ -59,7 +63,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### Professional Experience
+### 💼 Professional Experience
 
 * **Client Coordinator & Technical Trainer — SCMS Project**  
   **Madhya Pradesh Higher Education Department** &nbsp;·&nbsp; *2024 – Present*  
@@ -79,15 +83,15 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### Selected Projects
+### 🚀 Selected Projects
 
 <!-- START_SECTION:PROJECTS -->
 | Project | Focus & Technical Overview | Stack & Links |
 | :--- | :--- | :--- |
-| **[AI Powered Car Price Prediction](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction)** | End-to-end regression modeling and feature engineering pipeline to predict pre-owned vehicle valuations with cross-validated evaluation. | `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
-| **[Emergency Patient Priority Prediction](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction)** | Clinical triage prioritization system utilizing multi-class predictive classification to assess patient acuity and support hospital admissions. | `Python, Machine Learning`<br/>[Repository ↗](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
-| **[Breast Cancer Detection](https://github.com/AbhayDw/Breast-Cancer-Detection)** | Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation. | `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/Breast-Cancer-Detection) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
-| **[California Housing Price Prediction](https://github.com/AbhayDw/California-Housing-Price-Prediction)** | Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning. | `Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/California-Housing-Price-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[AI Powered Car Price Prediction](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction)** | End-to-end regression modeling and feature engineering pipeline to predict pre-owned vehicle valuations with cross-validated evaluation. | <img src="https://skillicons.dev/icons?i=py,sklearn" height="22" alt="stack" /><br/>`Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[Emergency Patient Priority Prediction](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction)** | Clinical triage prioritization system utilizing multi-class predictive classification to assess patient acuity and support hospital admissions. | <img src="https://skillicons.dev/icons?i=py" height="22" alt="stack" /><br/>`Python, Machine Learning`<br/>[Repository ↗](https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[Breast Cancer Detection](https://github.com/AbhayDw/Breast-Cancer-Detection)** | Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation. | <img src="https://skillicons.dev/icons?i=py,sklearn" height="22" alt="stack" /><br/>`Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/Breast-Cancer-Detection) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
+| **[California Housing Price Prediction](https://github.com/AbhayDw/California-Housing-Price-Prediction)** | Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning. | <img src="https://skillicons.dev/icons?i=py,sklearn" height="22" alt="stack" /><br/>`Python, Scikit-learn`<br/>[Repository ↗](https://github.com/AbhayDw/California-Housing-Price-Prediction) &nbsp;·&nbsp; [Live Demo ↗](https://abhay-portfolio-pi-tan.vercel.app/) |
 <!-- END_SECTION:PROJECTS -->
 
 <p align="right">
@@ -96,19 +100,31 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### Technical Expertise
+### 🛠️ Technical Expertise
 
-* **Programming & Querying:** `Python`, `SQL`
-* **Data Science & Analysis:** `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, Exploratory Data Analysis (EDA)
-* **Machine Learning:** `Scikit-learn`, Linear & Logistic Regression, Multi-class Classification, Feature Engineering, Model Evaluation
-* **Artificial Intelligence:** `Generative AI`, `Natural Language Processing (NLP)`, `LangChain`, `Retrieval-Augmented Generation (RAG)`
-* **Databases:** `PostgreSQL`, `MySQL`
-* **Analytics & Reporting:** `Power BI`, `Microsoft Excel (Advanced Data Modeling)`
-* **Tools & Workflow:** `Git`, `GitHub`, `GitHub Actions (CI/CD)`, `VS Code`, `Jupyter Notebook`
+| Category | Specialized Toolchain & Applied Competencies | Official Icons |
+| :--- | :--- | :---: |
+| **Programming & Querying** | `Python`, `SQL` | <img src="https://skillicons.dev/icons?i=py,mysql,postgres" height="26" alt="Programming Icons" /> |
+| **Data Science & Analysis** | `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, Exploratory Data Analysis (EDA) | <img src="https://skillicons.dev/icons?i=pandas,numpy,sklearn" height="26" alt="Data Science Icons" /> |
+| **Machine Learning** | `Scikit-learn`, Linear & Logistic Regression, Multi-class Classification, Feature Engineering, Model Evaluation | <img src="https://skillicons.dev/icons?i=sklearn,py" height="26" alt="Machine Learning Icons" /> |
+| **Artificial Intelligence** | `Generative AI`, `Natural Language Processing (NLP)`, `LangChain`, `Retrieval-Augmented Generation (RAG)` | <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" height="20" /> &nbsp; <img src="https://img.shields.io/badge/Gemini_AI-1A73E8?style=flat-square&logo=google&logoColor=white" height="20" /> |
+| **Databases** | `PostgreSQL`, `MySQL` | <img src="https://skillicons.dev/icons?i=postgres,mysql" height="26" alt="Database Icons" /> |
+| **Analytics & Reporting** | `Power BI`, `Microsoft Excel (Advanced Data Modeling)` | <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" height="20" /> &nbsp; <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" height="20" /> |
+| **Tools & Workflow** | `Git`, `GitHub`, `GitHub Actions (CI/CD)`, `VS Code`, `Jupyter Notebook` | <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode" height="26" alt="Tools Icons" /> |
 
 ---
 
-### Certifications & Achievements
+### 📊 GitHub Activity & Statistics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AbhayDw&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=F59E0B&text_color=94A3B8" alt="GitHub Stats" height="155" />
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhayDw&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=94A3B8" alt="Top Languages" height="155" />
+</div>
+
+---
+
+### 🏆 Certifications & Achievements
 
 #### Certifications
 * **Oracle Agentic AI Certified Foundations Associate** — Oracle
@@ -125,7 +141,7 @@ Over the past several years, my work has centered on bridging the gap between te
 
 ---
 
-### Contact
+### 📬 Contact
 
 Feel free to connect regarding **government digital initiatives, software delivery, technical training programs, or applied AI/data solutions**:
 

@@ -19,12 +19,13 @@ README_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 START_TAG = "<!-- START_SECTION:PROJECTS -->"
 END_TAG = "<!-- END_SECTION:PROJECTS -->"
 
-# Curated verified projects (top 4 showcased prominently)
+# Curated verified projects (content preserved exactly)
 CURATED_PROJECTS = [
     {
         "name": "AI Powered Car Price Prediction",
         "description": "End-to-end regression modeling and feature engineering pipeline to predict pre-owned vehicle valuations with cross-validated evaluation.",
         "language": "Python, Scikit-learn",
+        "icon": "https://skillicons.dev/icons?i=py,sklearn",
         "repo_url": "https://github.com/AbhayDw/AI-Powered-Car-Price-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/"
     },
@@ -32,6 +33,7 @@ CURATED_PROJECTS = [
         "name": "Emergency Patient Priority Prediction",
         "description": "Clinical triage prioritization system utilizing multi-class predictive classification to assess patient acuity and support hospital admissions.",
         "language": "Python, Machine Learning",
+        "icon": "https://skillicons.dev/icons?i=py",
         "repo_url": "https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/"
     },
@@ -39,6 +41,7 @@ CURATED_PROJECTS = [
         "name": "Breast Cancer Detection",
         "description": "Diagnostic classification pipeline evaluating cellular biopsy metrics with precision/recall threshold optimization and ROC-AUC validation.",
         "language": "Python, Scikit-learn",
+        "icon": "https://skillicons.dev/icons?i=py,sklearn",
         "repo_url": "https://github.com/AbhayDw/Breast-Cancer-Detection",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/"
     },
@@ -46,6 +49,7 @@ CURATED_PROJECTS = [
         "name": "California Housing Price Prediction",
         "description": "Geospatial housing valuation regression model implementing spatial clustering, automated imputation, and hyperparameter tuning.",
         "language": "Python, Scikit-learn",
+        "icon": "https://skillicons.dev/icons?i=py,sklearn",
         "repo_url": "https://github.com/AbhayDw/California-Housing-Price-Prediction",
         "demo_url": "https://abhay-portfolio-pi-tan.vercel.app/"
     }
@@ -84,6 +88,7 @@ def fetch_portfolio_repos():
                 "name": name.replace("-", " ").title(),
                 "description": repo.get("description") or "Production engineering project and implementation repository.",
                 "language": repo.get("language") or "Python",
+                "icon": "https://skillicons.dev/icons?i=py",
                 "repo_url": repo.get("html_url"),
                 "demo_url": repo.get("homepage") or "https://abhay-portfolio-pi-tan.vercel.app/"
             })
@@ -91,26 +96,25 @@ def fetch_portfolio_repos():
     return portfolio_repos
 
 def generate_markdown(projects):
-    """Formats projects into a restrained, clean editorial table."""
+    """Formats projects into a refined dark editorial presentation table with tech icons."""
     lines = [
         "| Project | Focus & Technical Overview | Stack & Links |",
         "| :--- | :--- | :--- |"
     ]
     
-    # Prominently show top 4 projects
     for p in projects[:4]:
         name = p["name"]
         desc = p["description"]
         lang = p["language"]
         repo = p["repo_url"]
         demo = p.get("demo_url", "")
+        icon_url = p.get("icon", "https://skillicons.dev/icons?i=py")
 
         demo_link = f" &nbsp;·&nbsp; [Live Demo ↗]({demo})" if demo else ""
         repo_link = f"[Repository ↗]({repo}){demo_link}"
-
-        # Clean cell text without unescaped pipes
         clean_desc = desc.replace("|", "/")
-        lines.append(f"| **[{name}]({repo})** | {clean_desc} | `{lang}`<br/>{repo_link} |")
+
+        lines.append(f"| **[{name}]({repo})** | {clean_desc} | <img src=\"{icon_url}\" height=\"22\" alt=\"stack\" /><br/>`{lang}`<br/>{repo_link} |")
 
     return "\n".join(lines)
 
