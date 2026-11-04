@@ -39,7 +39,6 @@ I am a **Technology & Digital Solutions Professional** working across state-leve
 
 ### Government & Institutional Project Contributions
 
-*The following represent targeted project contributions and coordination mandates delivered for state initiatives and public departments, distinct from direct civil-service employment:*
 
 #### **1. Student & College Management Software (SCMS)** — *Madhya Pradesh Higher Education Department*
 * **Role:** Client Coordinator & Technical Trainer
